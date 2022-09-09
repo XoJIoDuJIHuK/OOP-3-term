@@ -241,6 +241,43 @@ namespace OOP_Lab_1
             string StrToTuple = "ABC";
             Tuple<int, int, int, char> T = LocalFunc(ArrToTuple, StrToTuple);
             Console.WriteLine("\nКортеж: " + T);
+
+            // 6
+            void FirstFunc()
+            {
+                try
+                {
+                    checked
+                    {
+                        int x = int.MaxValue;
+                        x++;
+                    }
+                }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("1) Произошло переполнение!");
+                }
+            }
+
+            void SecondFunc()
+            {
+                try
+                {
+                    unchecked // Не вызывает OverflowException
+                    {
+                        int x = int.MaxValue;
+                        x++;
+                    }
+                }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("2) Произошло переполнение!");
+                }
+            }
+
+            FirstFunc();
+            SecondFunc();
+            Console.ReadKey();
         }
     }
 }
