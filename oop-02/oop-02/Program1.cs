@@ -20,4 +20,56 @@
             _daysInMonth[1] = 29;
         }
     }
+    public int _hour
+    {
+        get { return _hour; }
+        set { _hour = value; }
+    }
+    public int _minute
+    {
+        get { return _minute; }
+    }
+    public void setYear(int year)
+    {
+        _year = year;
+        leapCheck(year);
+    }
+    public int getYear()
+    {
+        return _year;
+    }
+    public void setMonth(ref int month)
+    {
+        if (1 < month && month <= 12)
+        {
+            _month = month;
+        }
+        else
+        {
+            Console.WriteLine("Invalid month value\n");
+            return;
+        }
+    }
+    public int getMonth()
+    {
+        return _month;
+    }
+    public void setDay(int day, out int result)
+    {
+        if (1 < day && day <= _daysInMonth[_month - 1])
+        {
+            _day = day;
+            result = 0;
+        }
+        else
+        {
+            Console.WriteLine("Invalid day value\n");
+            result = 0;
+            return;
+        }
+    }
+    public int getDay()
+    {
+        return _day;
+    }
 }
