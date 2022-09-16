@@ -72,4 +72,56 @@
     {
         return _day;
     }
+    private Date() { _numberOfObjects++; }
+    static Date() { _numberOfObjects++; }
+    public Date(int year)
+    {
+        leapCheck(year);
+        _year = year;
+        _month = 1;
+        _day = 1;
+        _numberOfObjects++;
+    }
+    public Date(int year, int month)
+    {
+        leapCheck(_year);
+        if (1 < month && month <= 12)
+        {
+            _month = month;
+
+        }
+        else
+        {
+            Console.WriteLine("Invalid month value\n");
+            return;
+        }
+        _year = year;
+        _day = 1;
+        _numberOfObjects++;
+    }
+    public Date(int year, int month, int day = 1)
+    {
+        leapCheck(year);
+        _year = year;
+        if (1 < month && month <= 12)
+        {
+            _month = month;
+        }
+        else
+        {
+            Console.WriteLine("Invalid month value\n");
+            return;
+        }
+        if (1 < day && day <= _daysInMonth[_month - 1])
+        {
+            _day = day;
+        }
+        else
+        {
+            Console.WriteLine("Invalid day value\n");
+            return;
+        }
+        _hash = GetHashCode();
+        _numberOfObjects++;
+    }
 }
