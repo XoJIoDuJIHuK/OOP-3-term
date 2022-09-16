@@ -124,4 +124,19 @@
         _hash = GetHashCode();
         _numberOfObjects++;
     }
+    public void WriteDate(bool format)
+    {
+        if (format)
+        {
+            Console.WriteLine($"{_day} {_months[_month - 1]} {_year}");
+        }
+        else
+        {
+            Console.WriteLine($"{_day}/{_month}/{_year}");
+        }
+    }
+    public void WriteMonthAndDay()
+    {
+        Console.WriteLine($"{_day} {_months[_month - 1]}");
+    }
 }
