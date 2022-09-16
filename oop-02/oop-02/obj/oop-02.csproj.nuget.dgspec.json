@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programs\\GitHub\\OOP-3-term\\oop-02\\oop-02\\oop-02.csproj": {}
+    "D:\\_УЧЁБА_\\Лабораторные работы\\OOP-3-term\\oop-02\\oop-02\\oop-02.csproj": {}
   },
   "projects": {
-    "D:\\Programs\\GitHub\\OOP-3-term\\oop-02\\oop-02\\oop-02.csproj": {
+    "D:\\_УЧЁБА_\\Лабораторные работы\\OOP-3-term\\oop-02\\oop-02\\oop-02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programs\\GitHub\\OOP-3-term\\oop-02\\oop-02\\oop-02.csproj",
+        "projectUniqueName": "D:\\_УЧЁБА_\\Лабораторные работы\\OOP-3-term\\oop-02\\oop-02\\oop-02.csproj",
         "projectName": "oop-02",
-        "projectPath": "D:\\Programs\\GitHub\\OOP-3-term\\oop-02\\oop-02\\oop-02.csproj",
+        "projectPath": "D:\\_УЧЁБА_\\Лабораторные работы\\OOP-3-term\\oop-02\\oop-02\\oop-02.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Programs\\GitHub\\OOP-3-term\\oop-02\\oop-02\\obj\\",
+        "outputPath": "D:\\_УЧЁБА_\\Лабораторные работы\\OOP-3-term\\oop-02\\oop-02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
