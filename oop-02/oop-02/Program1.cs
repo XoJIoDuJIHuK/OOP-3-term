@@ -140,3 +140,40 @@
         Console.WriteLine($"{_day} {_months[_month - 1]}");
     }
 }
+
+class Program
+{
+    static void Main()
+    {
+        int length = 5;
+        Date[] masOfDates = new Date[length];
+        for (int y = 2000, m = 2, d = 10, i = 0; i < 5; i++, y += 4, m++, d -= 2)
+        {
+            masOfDates[i] = new Date(y, m, d);
+            //int result = 0;
+            //masOfDates[i].setDay(d, out result);
+            //masOfDates[i].setMonth(ref m);
+            //masOfDates[i].setYear(y);
+            masOfDates[i].WriteDate(true);
+        }
+        Console.Write("Enter year ");
+        int destYear = Convert.ToInt32(Console.ReadLine());
+        for (int i = 0; i < length; i++)
+        {
+            if (masOfDates[i].getYear() == destYear)
+            {
+                masOfDates[i].WriteMonthAndDay();
+            }
+        }
+        Console.Write("Enter number ");
+        int destNumber = Convert.ToInt32(Console.ReadLine());
+        for (int i = 0; i < length; i++)
+        {
+            if (masOfDates[i].getDay() == destNumber || masOfDates[i].getMonth() == destNumber ||
+                masOfDates[i].getYear() == destNumber)
+            {
+                masOfDates[i].WriteDate(false);
+            }
+        }
+    }
+}
