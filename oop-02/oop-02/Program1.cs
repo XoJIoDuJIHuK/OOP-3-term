@@ -9,4 +9,15 @@
         "октября", "ноября", "декабря"};
     private int[] _daysInMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     static int _numberOfObjects = 0;
+    static void _numberOfObjectsOutput()
+    {
+        Console.WriteLine($"Количество объектов: {_numberOfObjects}");
+    }
+    public void leapCheck(int year)
+    {
+        if (year % 100 != 0 && year % 4 == 0)
+        {
+            _daysInMonth[1] = 29;
+        }
+    }
 }
