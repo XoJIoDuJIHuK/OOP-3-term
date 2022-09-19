@@ -155,6 +155,7 @@ class Program
             //masOfDates[i].setMonth(ref m);
             //masOfDates[i].setYear(y);
             masOfDates[i].WriteDate(true);
+            masOfDates[i].WriteDate(false);
         }
         Console.Write("Enter year ");
         int destYear = Convert.ToInt32(Console.ReadLine());
@@ -173,6 +174,7 @@ class Program
                 masOfDates[i].getYear() == destNumber)
             {
                 masOfDates[i].WriteDate(false);
+                masOfDates[i].WriteDate(true);
             }
         }
     }
