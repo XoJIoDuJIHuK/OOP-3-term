@@ -189,24 +189,20 @@ public class Vector
             return false;
         }
     }
-    //public void WriteVector()
-    //{
-    //    if (_length == 0)
-    //    {
-    //        Console.WriteLine("vector is empty");
-    //        return;
-    //    }
-    //    string str = "";
-    //    for (int i = 0; i < _length; i++)
-    //    {
-    //        str += Convert.ToString(_mas[i]) + " ";
-    //    }
-    //    Console.WriteLine(str);
-    //}
-    //public virtual Vector DelPositive(Vector parm)
-    //{
-    //    return null;
-    //}
+    public void WriteVector()
+    {
+        if (_length == 0)
+        {
+            Console.WriteLine("vector is empty");
+            return;
+        }
+        string str = "";
+        for (int i = 0; i < _length; i++)
+        {
+            str += Convert.ToString(_mas[i]) + " ";
+        }
+        Console.WriteLine(str);
+    }
     //public class Owner
     //{
     //    private int _id;
