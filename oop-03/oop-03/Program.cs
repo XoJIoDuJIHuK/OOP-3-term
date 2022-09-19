@@ -62,32 +62,32 @@ public class Vector
         }
         return newVector;
     }
-    //public static bool operator >(Vector left, Vector right)
-    //{
-    //    if (left._length > right._length)
-    //    {
-    //        return true;
-    //    }
-    //    else if (left._length < right._length)
-    //    {
-    //        return false;
-    //    }
-    //    else
-    //    {
-    //        for (int i = 0; i < left._length; i++)
-    //        {
-    //            if (left.getMas(i) > right.getMas(i))
-    //            {
-    //                return true;
-    //            }
-    //            else if (left.getMas(i) < right.getMas(i))
-    //            {
-    //                return false;
-    //            }
-    //        }
-    //        return false;
-    //    }
-    //}
+    public static bool operator >(Vector left, Vector right)
+    {
+        if (left._length > right._length)
+        {
+            return true;
+        }
+        else if (left._length < right._length)
+        {
+            return false;
+        }
+        else
+        {
+            for (int i = 0; i < left._length; i++)
+            {
+                if (left.getMas(i) > right.getMas(i))
+                {
+                    return true;
+                }
+                else if (left.getMas(i) < right.getMas(i))
+                {
+                    return false;
+                }
+            }
+            return false;
+        }
+    }
     //public static bool operator <(Vector left, Vector right)
     //{
     //    if (left._length < right._length)
