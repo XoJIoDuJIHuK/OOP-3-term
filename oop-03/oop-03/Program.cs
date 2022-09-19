@@ -134,61 +134,61 @@ public class Vector
         left = newVector;
         return newVector;
     }
-    //public override bool Equals(object o)
-    //{
-    //    Vector right = (Vector)o;
-    //    if (ReferenceEquals(this, right))
-    //    {
-    //        return true;
-    //    }
-    //    else if(_length != right._length)
-    //    {
-    //        return false;
-    //    }
-    //    else
-    //    {
-    //        for (int i = 0; i < _length; i++)
-    //        {
-    //            if (_mas[i] != right.getMas(i))
-    //            {
-    //                return false;
-    //            }
-    //        }
-    //        return true;
-    //    }
-    //}
-    //public override int GetHashCode()
-    //{
-    //    int hash = 0;
-    //    for (int i = 0; i < _length; i++)
-    //    {
-    //        hash += _mas[i];
-    //    }
-    //    hash /= _length;
-    //    return hash;
-    //}
-    //public static bool operator true(Vector vector)
-    //{
-    //    if (vector._length == 0)
-    //    {
-    //        return false;
-    //    }
-    //    else
-    //    {
-    //        return true;
-    //    }
-    //}
-    //public static bool operator false(Vector vector)
-    //{
-    //    if (vector._length == 0)
-    //    {
-    //        return true;
-    //    }
-    //    else
-    //    {
-    //        return false;
-    //    }
-    //}
+    public override bool Equals(object o)
+    {
+        Vector right = (Vector)o;
+        if (ReferenceEquals(this, right))
+        {
+            return true;
+        }
+        else if (_length != right._length)
+        {
+            return false;
+        }
+        else
+        {
+            for (int i = 0; i < _length; i++)
+            {
+                if (_mas[i] != right.getMas(i))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+    public override int GetHashCode()
+    {
+        int hash = 0;
+        for (int i = 0; i < _length; i++)
+        {
+            hash += _mas[i];
+        }
+        hash /= _length;
+        return hash;
+    }
+    public static bool operator true(Vector vector)
+    {
+        if (vector._length == 0)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    public static bool operator false(Vector vector)
+    {
+        if (vector._length == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     //public void WriteVector()
     //{
     //    if (_length == 0)
