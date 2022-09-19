@@ -31,37 +31,37 @@ public class Vector
     {
         return _mas[i];
     }
-    //public static Vector operator +(Vector left, Vector right)
-    //{
-    //    int length = 0;
-    //    Vector bigger = null;
-    //    Vector smaller = null;
-    //    if (left._length > right._length)
-    //    {
-    //        bigger = left;
-    //        smaller = right;
-    //        length = left._length;
-    //    }
-    //    else
-    //    {
-    //        bigger = right;
-    //        smaller = left;
-    //        length = right._length;
-    //    }
-    //    Vector newVector = new Vector(length);
-    //    for (int i = 0; i < length; i++)
-    //    {
-    //        if (i < smaller._length)
-    //        {
-    //            newVector.setMas(i, bigger.getMas(i) + smaller.getMas(i));
-    //        }
-    //        else
-    //        {
-    //            newVector.setMas(i, bigger.getMas(i));
-    //        }
-    //    }
-    //    return newVector;
-    //}
+    public static Vector operator +(Vector left, Vector right)
+    {
+        int length = 0;
+        Vector bigger = null;
+        Vector smaller = null;
+        if (left._length > right._length)
+        {
+            bigger = left;
+            smaller = right;
+            length = left._length;
+        }
+        else
+        {
+            bigger = right;
+            smaller = left;
+            length = right._length;
+        }
+        Vector newVector = new Vector(length);
+        for (int i = 0; i < length; i++)
+        {
+            if (i < smaller._length)
+            {
+                newVector.setMas(i, bigger.getMas(i) + smaller.getMas(i));
+            }
+            else
+            {
+                newVector.setMas(i, bigger.getMas(i));
+            }
+        }
+        return newVector;
+    }
     //public static bool operator >(Vector left, Vector right)
     //{
     //    if (left._length > right._length)
