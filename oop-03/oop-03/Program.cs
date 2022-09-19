@@ -203,34 +203,34 @@ public class Vector
         }
         Console.WriteLine(str);
     }
-    //public class Owner
-    //{
-    //    private int _id;
-    //    private string _name;
-    //    private string _org;
-    //    public Owner(int id, string name, string org)
-    //    {
-    //        _id = id;
-    //        _name = name;
-    //        _org = org;
-    //    }
-    //    public void WriteOwner()
-    //    {
-    //        Console.WriteLine($"{_id} {_name} {_org}");
-    //    }
-    //}
-    //public class Date
-    //{
-    //    private DateTime _date;
-    //    public Date()
-    //    {
-    //        _date = DateTime.Now;
-    //    }
-    //    public void WriteDate()
-    //    {
-    //        Console.WriteLine(_date.ToString());
-    //    }
-    //}
+    public class Owner
+    {
+        private int _id;
+        private string _name;
+        private string _org;
+        public Owner(int id, string name, string org)
+        {
+            _id = id;
+            _name = name;
+            _org = org;
+        }
+        public void WriteOwner()
+        {
+            Console.WriteLine($"{_id} {_name} {_org}");
+        }
+    }
+    public class Date
+    {
+        private DateTime _date;
+        public Date()
+        {
+            _date = DateTime.Now;
+        }
+        public void WriteDate()
+        {
+            Console.WriteLine(_date.ToString());
+        }
+    }
 }
 
 //class Program
