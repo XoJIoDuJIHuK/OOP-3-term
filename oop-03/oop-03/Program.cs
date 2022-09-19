@@ -233,44 +233,44 @@ public class Vector
     }
 }
 
-//class Program
-//{
-//    static void Main()
-//    {
-//        int[] mas1 = { 1, 2, 3 };
-//        Vector vector1 = new Vector(mas1);
-//        vector1.WriteVector();
-//        int[] mas2 = { -4, 5, -6 };
-//        Vector vector2 = new Vector(mas2);
-//        vector2.WriteVector();
-//        Vector vector3 = vector1 == vector2;
-//        vector3.WriteVector();
-//        if (vector1.Equals(vector2))
-//        {
-//            Console.WriteLine("vector1 == vector2");
-//        }
-//        else
-//        {
-//            Console.WriteLine("vector1 != vector2");
-//        }
-//        Console.WriteLine(vector1.GetHashCode());
-//        Vector vector4 = vector1 + vector2;
-//        vector4.WriteVector();
-//        if (vector1)
-//        {
-//            Console.WriteLine("vector1 isn't empty");
-//        }
-//        else
-//        {
-//            Console.WriteLine("vector1 is empty");
-//        }
-//        Vector.Owner owner = new Vector.Owner(987, "Oleg", "BSTU");
-//        owner.WriteOwner();
-//        Vector.Date date = new Vector.Date();
-//        date.WriteDate();
-//        Vector vector5 = vector2.DelPositive();
-//        vector5.WriteVector();
-//        string str = "qwertyuiop";
-//        Console.WriteLine(str.StrCut(6));
-//    }
-//}
+class Program
+{
+    static void Main()
+    {
+        int[] mas1 = { 1, 2, 3 };
+        Vector vector1 = new Vector(mas1);
+        vector1.WriteVector();
+        int[] mas2 = { -4, 5, -6 };
+        Vector vector2 = new Vector(mas2);
+        vector2.WriteVector();
+        Vector vector3 = vector1 == vector2;
+        vector3.WriteVector();
+        if (vector1.Equals(vector2))
+        {
+            Console.WriteLine("vector1 == vector2");
+        }
+        else
+        {
+            Console.WriteLine("vector1 != vector2");
+        }
+        Console.WriteLine(vector1.GetHashCode());
+        Vector vector4 = vector1 + vector2;
+        vector4.WriteVector();
+        if (vector1)
+        {
+            Console.WriteLine("vector1 isn't empty");
+        }
+        else
+        {
+            Console.WriteLine("vector1 is empty");
+        }
+        Vector.Owner owner = new Vector.Owner(987, "Oleg", "BSTU");
+        owner.WriteOwner();
+        Vector.Date date = new Vector.Date();
+        date.WriteDate();
+        Vector vector5 = vector2.DelPositive();
+        vector5.WriteVector();
+        string str = "qwertyuiop";
+        Console.WriteLine(str.StrCut(6));
+    }
+}
