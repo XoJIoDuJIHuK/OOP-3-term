@@ -159,39 +159,39 @@ class Captain : ISwim
         return str;
     }
 }
-//class Printer
-//{
-//    public string IAmPrinting(ISwim someobj)
-//    {
-//        if (someobj == null) return "";
-//        else return someobj.ToString();
-//    }
-//}
-//class Program
-//{
-//    static void Main()
-//    {
-//        Ship obj1 = new Ship();
-//        Corvette obj2 = obj1 as Corvette; // null
-//        Corvette obj3 = new Corvette();
-//        Ship obj4 = obj3 as Ship; //Ship {Corvette}
+class Printer
+{
+    public string IAmPrinting(ISwim someobj)
+    {
+        if (someobj == null) return "";
+        else return someobj.ToString();
+    }
+}
+class Program
+{
+    static void Main()
+    {
+        Ship obj1 = new Ship();
+        Corvette obj2 = obj1 as Corvette; // null
+        Corvette obj3 = new Corvette();
+        Ship obj4 = obj3 as Ship; //Ship {Corvette}
 
-//        Boat boat = new();
-//        Steamvessel stem = new();
-//        Sailship sail = new();
-//        Corvette corv = new();
-//        bool cond = corv is ISwim;
-//        cond = corv is Vehicle;
-//        cond = corv is Ship;
-//        Printer printer = new Printer();
-//        Vehicle[] ships = new Vehicle[4];
-//        ships[0] = boat;
-//        ships[1] = stem;
-//        ships[2] = sail;
-//        ships[3] = corv;
-//        for (int i = 0; i < ships.Length; i++)
-//        {
-//            Console.WriteLine($"{printer.IAmPrinting(ships[i])}");
-//        }
-//    }
-//}
+        Boat boat = new();
+        Steamvessel stem = new();
+        Sailship sail = new();
+        Corvette corv = new();
+        bool cond = corv is ISwim;
+        cond = corv is Vehicle;
+        cond = corv is Ship;
+        Printer printer = new Printer();
+        Vehicle[] ships = new Vehicle[4];
+        ships[0] = boat;
+        ships[1] = stem;
+        ships[2] = sail;
+        ships[3] = corv;
+        for (int i = 0; i < ships.Length; i++)
+        {
+            Console.WriteLine($"{printer.IAmPrinting(ships[i])}");
+        }
+    }
+}
