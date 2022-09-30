@@ -101,64 +101,64 @@ sealed class Corvette : Ship
         return str;
     }
 }
-//class Boat : Vehicle
-//{
-//    public override void Honk(int count)
-//    {
-//        Console.WriteLine("Boat doesn't honk");
-//    }
-//    public override void CountIncome(double distance)
-//    {
-//        Console.WriteLine($"Estimated income is 0");
-//    }
-//    public int _Velocity { get; set; }
-//    public int _PassengersCapacity { get; set; }
-//    public Boat()
-//    {
-//        _Velocity = 5;
-//        _PassengersCapacity = 8;
-//    }
-//    public override string ToString()
-//    {
-//        string str = "Boat Velocity = " + _Velocity.ToString() + ", PassengersCapacity = " + _PassengersCapacity.ToString();
-//        return str;
-//    }
-//    public override int GetHashCode()
-//    {
-//        return (_Velocity * 10 + _PassengersCapacity) % 13;
-//    }
-//    public override bool Equals(object? obj)
-//    {
-//        if (obj == null) return false;
-//        if (_PassengersCapacity == ((Boat)obj)._PassengersCapacity && _Velocity == ((Boat)obj)._Velocity) return true;
-//        else return false;
-//    }
-//}
-//class Captain : ISwim
-//{
-//    public virtual void Smoke()
-//    {
-//        Console.WriteLine("Captain smokes");
-//    }
-//    public void Honk(int count)
-//    {
-//        Console.WriteLine("Captain screams 'Help!'");
-//    }
-//    public void CountIncome(double distance)
-//    {
-//        Console.WriteLine("Captain doesn't make income");
-//    }
-//    public int _Velocity { get; set; }
-//    public Captain()
-//    {
-//        _Velocity = 1;
-//    }
-//    public override string ToString()
-//    {
-//        string str = "Captain Velocity = " + _Velocity.ToString();
-//        return str;
-//    }
-//}
+class Boat : Vehicle
+{
+    public override void Honk(int count)
+    {
+        Console.WriteLine("Boat doesn't honk");
+    }
+    public override void CountIncome(double distance)
+    {
+        Console.WriteLine($"Estimated income is 0");
+    }
+    public int _Velocity { get; set; }
+    public int _PassengersCapacity { get; set; }
+    public Boat()
+    {
+        _Velocity = 5;
+        _PassengersCapacity = 8;
+    }
+    public override string ToString()
+    {
+        string str = "Boat Velocity = " + _Velocity.ToString() + ", PassengersCapacity = " + _PassengersCapacity.ToString();
+        return str;
+    }
+    public override int GetHashCode()
+    {
+        return (_Velocity * 10 + _PassengersCapacity) % 13;
+    }
+    public override bool Equals(object? obj)
+    {
+        if (obj == null) return false;
+        if (_PassengersCapacity == ((Boat)obj)._PassengersCapacity && _Velocity == ((Boat)obj)._Velocity) return true;
+        else return false;
+    }
+}
+class Captain : ISwim
+{
+    public virtual void Smoke()
+    {
+        Console.WriteLine("Captain smokes");
+    }
+    public void Honk(int count)
+    {
+        Console.WriteLine("Captain screams 'Help!'");
+    }
+    public void CountIncome(double distance)
+    {
+        Console.WriteLine("Captain doesn't make income");
+    }
+    public int _Velocity { get; set; }
+    public Captain()
+    {
+        _Velocity = 1;
+    }
+    public override string ToString()
+    {
+        string str = "Captain Velocity = " + _Velocity.ToString();
+        return str;
+    }
+}
 //class Printer
 //{
 //    public string IAmPrinting(ISwim someobj)
