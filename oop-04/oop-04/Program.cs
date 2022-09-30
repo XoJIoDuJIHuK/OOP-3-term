@@ -10,45 +10,45 @@ abstract class Vehicle : ISwim
     public abstract void CountIncome(double distance);
 }
 
-//class Ship : Vehicle
-//{
-//    public override void Honk(int count) { }
-//    public override void CountIncome(double distance) { }
-//    public int _Velocity { get; set; }
-//    public int _PassengersCapacity { get; set; }
-//    public override string ToString()
-//    {
-//        string str = "Ship Velocity = " + _Velocity.ToString() + ", PassengersCapacity = " + _PassengersCapacity.ToString();
-//        return str;
-//    }
-//}
+class Ship : Vehicle
+{
+    public override void Honk(int count) { }
+    public override void CountIncome(double distance) { }
+    public int _Velocity { get; set; }
+    public int _PassengersCapacity { get; set; }
+    public override string ToString()
+    {
+        string str = "Ship Velocity = " + _Velocity.ToString() + ", PassengersCapacity = " + _PassengersCapacity.ToString();
+        return str;
+    }
+}
 
-//class Steamvessel : Ship
-//{
-//    public override void Honk(int count)
-//    {
-//        if (count == 0) Console.WriteLine("Steamvessel hasn't honked");
-//        else if (count == 1) Console.WriteLine("Steamvessel has honked 1 time");
-//        else if (count > 1) Console.WriteLine($"Steamvessel has honked {count} times");
-//        else return;
-//    }
-//    public override void CountIncome(double distance)
-//    {
-//        double Income = distance * _Velocity * _PassengersCapacity;
-//        Console.WriteLine($"Estimated income is {Income}");
-//    }
-//    public Steamvessel()
-//    {
-//        _Velocity = 40;
-//        _PassengersCapacity = 150;
-//    }
-//    public override string ToString()
-//    {
-//        string str = "Steamvessel Velocity = " + _Velocity.ToString() + ", PassengersCapacity = " +
-//            _PassengersCapacity.ToString();
-//        return str;
-//    }
-//}
+class Steamvessel : Ship
+{
+    public override void Honk(int count)
+    {
+        if (count == 0) Console.WriteLine("Steamvessel hasn't honked");
+        else if (count == 1) Console.WriteLine("Steamvessel has honked 1 time");
+        else if (count > 1) Console.WriteLine($"Steamvessel has honked {count} times");
+        else return;
+    }
+    public override void CountIncome(double distance)
+    {
+        double Income = distance * _Velocity * _PassengersCapacity;
+        Console.WriteLine($"Estimated income is {Income}");
+    }
+    public Steamvessel()
+    {
+        _Velocity = 40;
+        _PassengersCapacity = 150;
+    }
+    public override string ToString()
+    {
+        string str = "Steamvessel Velocity = " + _Velocity.ToString() + ", PassengersCapacity = " +
+            _PassengersCapacity.ToString();
+        return str;
+    }
+}
 //class Sailship : Ship
 //{
 //    public override void Honk(int count)
