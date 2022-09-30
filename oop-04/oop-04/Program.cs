@@ -49,58 +49,58 @@ class Steamvessel : Ship
         return str;
     }
 }
-//class Sailship : Ship
-//{
-//    public override void Honk(int count)
-//    {
-//        if (count == 0) Console.WriteLine("Sailship hasn't bonked");
-//        else if (count == 1) Console.WriteLine("Sailship has bonked 1 time");
-//        else if (count > 1) Console.WriteLine($"Sailship has bonked {count} times");
-//        else return;
-//    }
-//    public override void CountIncome(double distance)
-//    {
-//        double Income = 0.7 * distance * _Velocity * _PassengersCapacity;
-//        Console.WriteLine($"Estimated income is {Income}");
-//    }
-//    public Sailship()
-//    {
-//        _Velocity = 20;
-//        _PassengersCapacity = 100;
-//    }
-//    public override string ToString()
-//    {
-//        string str = "Sailship Velocity = " + _Velocity.ToString() + ", PassengersCapacity = " +
-//            _PassengersCapacity.ToString();
-//        return str;
-//    }
-//}
-//sealed class Corvette : Ship
-//{
-//    public override void Honk(int count)
-//    {
-//        if (count == 0) Console.WriteLine("Corvette hasn't bonked");
-//        else if (count == 1) Console.WriteLine("Corvette has bonked 1 time");
-//        else if (count > 1) Console.WriteLine($"Corvette has bonked {count} times");
-//        else return;
-//    }
-//    public override void CountIncome(double distance)
-//    {
-//        double Income = 0.5 * distance * _Velocity * _PassengersCapacity;
-//        Console.WriteLine($"Estimated income is {Income}");
-//    }
-//    public Corvette()
-//    {
-//        _Velocity = 30;
-//        _PassengersCapacity = 50;
-//    }
-//    public override string ToString()
-//    {
-//        string str = "Corvette Velocity = " + _Velocity.ToString() + ", PassengersCapacity = " +
-//            _PassengersCapacity.ToString();
-//        return str;
-//    }
-//}
+class Sailship : Ship
+{
+    public override void Honk(int count)
+    {
+        if (count == 0) Console.WriteLine("Sailship hasn't bonked");
+        else if (count == 1) Console.WriteLine("Sailship has bonked 1 time");
+        else if (count > 1) Console.WriteLine($"Sailship has bonked {count} times");
+        else return;
+    }
+    public override void CountIncome(double distance)
+    {
+        double Income = 0.7 * distance * _Velocity * _PassengersCapacity;
+        Console.WriteLine($"Estimated income is {Income}");
+    }
+    public Sailship()
+    {
+        _Velocity = 20;
+        _PassengersCapacity = 100;
+    }
+    public override string ToString()
+    {
+        string str = "Sailship Velocity = " + _Velocity.ToString() + ", PassengersCapacity = " +
+            _PassengersCapacity.ToString();
+        return str;
+    }
+}
+sealed class Corvette : Ship
+{
+    public override void Honk(int count)
+    {
+        if (count == 0) Console.WriteLine("Corvette hasn't bonked");
+        else if (count == 1) Console.WriteLine("Corvette has bonked 1 time");
+        else if (count > 1) Console.WriteLine($"Corvette has bonked {count} times");
+        else return;
+    }
+    public override void CountIncome(double distance)
+    {
+        double Income = 0.5 * distance * _Velocity * _PassengersCapacity;
+        Console.WriteLine($"Estimated income is {Income}");
+    }
+    public Corvette()
+    {
+        _Velocity = 30;
+        _PassengersCapacity = 50;
+    }
+    public override string ToString()
+    {
+        string str = "Corvette Velocity = " + _Velocity.ToString() + ", PassengersCapacity = " +
+            _PassengersCapacity.ToString();
+        return str;
+    }
+}
 //class Boat : Vehicle
 //{
 //    public override void Honk(int count)
