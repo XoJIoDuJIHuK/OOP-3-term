@@ -12,6 +12,7 @@ abstract class Vehicle : ISwim
 
 class Ship : Vehicle
 {
+    private int id = 0;
     public override void Honk(int count) { }
     public override void CountIncome(double distance) { }
     public int _Velocity { get; set; }
@@ -103,6 +104,10 @@ sealed class Corvette : Ship
 }
 class Boat : Vehicle
 {
+    public int a
+    {
+        get;
+    }
     public override void Honk(int count)
     {
         Console.WriteLine("Boat doesn't honk");
@@ -180,9 +185,11 @@ class Program
         Steamvessel stem = new();
         Sailship sail = new();
         Corvette corv = new();
-        bool cond = corv is ISwim;
-        cond = corv is Vehicle;
-        cond = corv is Ship;
+        corv.Honk(1);
+        bool cond = corv is ISwim;//1
+        bool cond1 = corv is Vehicle;//1
+        bool cond2 = corv is Ship;//1
+
         Printer printer = new Printer();
         Vehicle[] ships = new Vehicle[4];
         ships[0] = boat;
