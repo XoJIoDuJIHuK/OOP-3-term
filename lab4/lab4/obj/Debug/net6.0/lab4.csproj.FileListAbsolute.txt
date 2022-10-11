@@ -1,0 +1,15 @@
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\bin\Debug\net6.0\lab4.exe
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\bin\Debug\net6.0\lab4.deps.json
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\bin\Debug\net6.0\lab4.runtimeconfig.json
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\bin\Debug\net6.0\lab4.dll
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\bin\Debug\net6.0\lab4.pdb
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\obj\Debug\net6.0\lab4.csproj.AssemblyReference.cache
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\obj\Debug\net6.0\lab4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\obj\Debug\net6.0\lab4.AssemblyInfoInputs.cache
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\obj\Debug\net6.0\lab4.AssemblyInfo.cs
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\obj\Debug\net6.0\lab4.csproj.CoreCompileInputs.cache
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\obj\Debug\net6.0\lab4.dll
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\obj\Debug\net6.0\refint\lab4.dll
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\obj\Debug\net6.0\lab4.pdb
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\obj\Debug\net6.0\lab4.genruntimeconfig.cache
+C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\obj\Debug\net6.0\ref\lab4.dll

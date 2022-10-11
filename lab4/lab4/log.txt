@@ -1,0 +1,8 @@
+
+09.10.2022 16:27:37 
+INFO:
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Convert.ToByte(String value)
+   at lab4.Conteiner.Old() in C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\5lab_Struck_Enum.cs:line 82
+   at lab4.programm.Main(String[] args) in C:\Users\rubas\Desktop\Универ\2-1\oop\lab4\lab4\programm.cs:line 50
