@@ -17,7 +17,7 @@
         {
             int value = parm1.getMas(i);
             if (value > max) max = value;
-            if (value < min) min = value;
+            if (value < min) min = value; 
         }
         for (int i = 0; i < parm2.getLength(); i++)
         {
