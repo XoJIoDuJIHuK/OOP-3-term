@@ -1,64 +1,64 @@
 ﻿using System.Reflection.Metadata.Ecma335;
 
-//class User
-//{
-//    public string _string;
-//    private double _compression;
-//    private int _position;
-//    public void Compress(double compression)
-//    {
-//        _compression *= compression;
-//    }
-//    public void Move(int offset)
-//    {
-//        _position += offset;
-//    }
-//    public User(int c, int p)
-//    {
-//        _string = "";
-//        _compression = c;
-//        _position = p;
-//    }
-//    public User()
-//    {
-//        _string = "";
-//        _compression = 1;
-//        _position = 0;
-//    }
-//    public void Write()
-//    {
-//        Console.WriteLine($"compression = {_compression}, position = {_position}");
-//    }
-//    public void DeleteSpaces(Action<User> op) => op(this);
-//    public void DeletePunctuationMarks(Action<User> op) => op(this);
-//    public int ReturnNumberOfSpaces(Func<User, int> op) => op(this);
-//    public bool IsShorterThanTenCharacters(Predicate<User> op) => op(this);
-//    public void AddQwerty(Action<User> op) => op(this);
-//}
-
-
-
-class EventCallers
+class User
 {
-    public delegate void delegateCompress(double compress);
-    public delegate void delegateMove(int offset);
-    public event delegateCompress? eventHandlerCompress;
-    public event delegateMove? eventHandlerMove;
-    public void EventCompress(double compress)
-    {
-        if (eventHandlerCompress != null)
-        {
-            eventHandlerCompress(compress);
-        }
-    }
-    public void EventMove(int offset)
-    {
-        if (eventHandlerMove != null)
-        {
-            eventHandlerMove(offset);
-        }
-    }
+    //public string _string;
+    //private double _compression;
+    //private int _position;
+    //public void Compress(double compression)
+    //{
+    //    _compression *= compression;
+    //}
+    //public void Move(int offset)
+    //{
+    //    _position += offset;
+    //}
+    //public User(int c, int p)
+    //{
+    //    _string = "";
+    //    _compression = c;
+    //    _position = p;
+    //}
+    //public User()
+    //{
+    //    _string = "";
+    //    _compression = 1;
+    //    _position = 0;
+    //}
+    //public void Write()
+    //{
+    //    Console.WriteLine($"compression = {_compression}, position = {_position}");
+    //}
+    //public void DeleteSpaces(Action<User> op) => op(this);
+    //public void DeletePunctuationMarks(Action<User> op) => op(this);
+    //public int ReturnNumberOfSpaces(Func<User, int> op) => op(this);
+    //public bool IsShorterThanTenCharacters(Predicate<User> op) => op(this);
+    //public void AddQwerty(Action<User> op) => op(this);
 }
+
+
+
+//class EventCallers
+//{
+//    public delegate void delegateCompress(double compress);
+//    public delegate void delegateMove(int offset);
+//    public event delegateCompress? eventHandlerCompress;
+//    public event delegateMove? eventHandlerMove;
+//    public void EventCompress(double compress)
+//    {
+//        if (eventHandlerCompress != null)
+//        {
+//            eventHandlerCompress(compress);
+//        }
+//    }
+//    public void EventMove(int offset)
+//    {
+//        if (eventHandlerMove != null)
+//        {
+//            eventHandlerMove(offset);
+//        }
+//    }
+//}
 
 class Program
 {
