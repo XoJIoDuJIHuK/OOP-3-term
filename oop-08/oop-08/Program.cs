@@ -38,27 +38,27 @@ class User
 
 
 
-//class EventCallers
-//{
-//    public delegate void delegateCompress(double compress);
-//    public delegate void delegateMove(int offset);
-//    public event delegateCompress? eventHandlerCompress;
-//    public event delegateMove? eventHandlerMove;
-//    public void EventCompress(double compress)
-//    {
-//        if (eventHandlerCompress != null)
-//        {
-//            eventHandlerCompress(compress);
-//        }
-//    }
-//    public void EventMove(int offset)
-//    {
-//        if (eventHandlerMove != null)
-//        {
-//            eventHandlerMove(offset);
-//        }
-//    }
-//}
+class EventCallers
+{
+    public delegate void delegateCompress(double compress);
+    public delegate void delegateMove(int offset);
+    public event delegateCompress? eventHandlerCompress;
+    public event delegateMove? eventHandlerMove;
+    public void EventCompress(double compress)
+    {
+        if (eventHandlerCompress != null)
+        {
+            eventHandlerCompress(compress);
+        }
+    }
+    public void EventMove(int offset)
+    {
+        if (eventHandlerMove != null)
+        {
+            eventHandlerMove(offset);
+        }
+    }
+}
 
 class Program
 {
