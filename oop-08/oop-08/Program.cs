@@ -29,11 +29,11 @@ class User
     {
         Console.WriteLine($"compression = {_compression}, position = {_position}");
     }
-    //public void DeleteSpaces(Action<User> op) => op(this);
-    //public void DeletePunctuationMarks(Action<User> op) => op(this);
-    //public int ReturnNumberOfSpaces(Func<User, int> op) => op(this);
-    //public bool IsShorterThanTenCharacters(Predicate<User> op) => op(this);
-    //public void AddQwerty(Action<User> op) => op(this);
+    public void DeleteSpaces(Action<User> op) => op(this);
+    public void DeletePunctuationMarks(Action<User> op) => op(this);
+    public int ReturnNumberOfSpaces(Func<User, int> op) => op(this);
+    public bool IsShorterThanTenCharacters(Predicate<User> op) => op(this);
+    public void AddQwerty(Action<User> op) => op(this);
 }
 
 
