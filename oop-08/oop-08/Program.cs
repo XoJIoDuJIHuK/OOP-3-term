@@ -2,33 +2,33 @@
 
 class User
 {
-    //public string _string;
-    //private double _compression;
-    //private int _position;
-    //public void Compress(double compression)
-    //{
-    //    _compression *= compression;
-    //}
-    //public void Move(int offset)
-    //{
-    //    _position += offset;
-    //}
-    //public User(int c, int p)
-    //{
-    //    _string = "";
-    //    _compression = c;
-    //    _position = p;
-    //}
-    //public User()
-    //{
-    //    _string = "";
-    //    _compression = 1;
-    //    _position = 0;
-    //}
-    //public void Write()
-    //{
-    //    Console.WriteLine($"compression = {_compression}, position = {_position}");
-    //}
+    public string _string;
+    private double _compression;
+    private int _position;
+    public void Compress(double compression)
+    {
+        _compression *= compression;
+    }
+    public void Move(int offset)
+    {
+        _position += offset;
+    }
+    public User(int c, int p)
+    {
+        _string = "";
+        _compression = c;
+        _position = p;
+    }
+    public User()
+    {
+        _string = "";
+        _compression = 1;
+        _position = 0;
+    }
+    public void Write()
+    {
+        Console.WriteLine($"compression = {_compression}, position = {_position}");
+    }
     //public void DeleteSpaces(Action<User> op) => op(this);
     //public void DeletePunctuationMarks(Action<User> op) => op(this);
     //public int ReturnNumberOfSpaces(Func<User, int> op) => op(this);
