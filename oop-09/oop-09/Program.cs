@@ -50,24 +50,24 @@ class CCollection : IList<Plant>
     {
         return _set.Contains(item);
     }
-//    public void CopyTo(Plant[] array, int arrayIndex)
-//    {
-//        for (int i = arrayIndex; i < array.Length; i++) _set.Add(array[i]);
-//    }
-//    public IEnumerator<Plant> GetEnumerator()
-//    {
-//        return new HashSet<Plant>.Enumerator();
-//    }
-//    public int IndexOf(Plant item)
-//    {
-//        int i = 0;
-//        foreach (var plant in _set)
-//        {
-//            if (plant.Equals(item)) return i;
-//            i++;
-//        }
-//        return -1;
-//    }
+    public void CopyTo(Plant[] array, int arrayIndex)
+    {
+        for (int i = arrayIndex; i < array.Length; i++) _set.Add(array[i]);
+    }
+    public IEnumerator<Plant> GetEnumerator()
+    {
+        return new HashSet<Plant>.Enumerator();
+    }
+    public int IndexOf(Plant item)
+    {
+        int i = 0;
+        foreach (var plant in _set)
+        {
+            if (plant.Equals(item)) return i;
+            i++;
+        }
+        return -1;
+    }
 //    public void Insert(int index, Plant item)
 //    {
 //        Add(item);
