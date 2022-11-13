@@ -18,13 +18,13 @@ class Plant
     }
 }
 
-//class CCollection : IList<Plant>
-//{
-//    private HashSet<Plant> _set;
-//    public CCollection()
-//    {
-//        _set = new HashSet<Plant>();
-//    }
+class CCollection : IList<Plant>
+{
+    private HashSet<Plant> _set;
+    public CCollection()
+    {
+        _set = new HashSet<Plant>();
+    }
 //    public Plant this[int i]
 //    {
 //        get { return new Plant("red", 0); }
