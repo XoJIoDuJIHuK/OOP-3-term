@@ -38,18 +38,18 @@ class CCollection : IList<Plant>
     {
         get { return false; }
     }
-//    public void Add(Plant item)
-//    {
-//        _set.Add(item);
-//    }
-//    public void Clear()
-//    {
-//        _set.Clear();
-//    }
-//    public bool Contains(Plant item)
-//    {
-//        return _set.Contains(item);
-//    }
+    public void Add(Plant item)
+    {
+        _set.Add(item);
+    }
+    public void Clear()
+    {
+        _set.Clear();
+    }
+    public bool Contains(Plant item)
+    {
+        return _set.Contains(item);
+    }
 //    public void CopyTo(Plant[] array, int arrayIndex)
 //    {
 //        for (int i = arrayIndex; i < array.Length; i++) _set.Add(array[i]);
