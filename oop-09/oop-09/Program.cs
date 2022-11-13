@@ -102,22 +102,22 @@ class CCollection : IList<Plant>
     }
 }
 
-//class Program
-//{
-//    static void Main()
-//    {
-//        CCollection collection = new CCollection();
-//        Plant a = new("green", 1.2);
-//        Plant b = new("blue", 2.5);
-//        Plant c = new("black", 5.3);
-//        collection.Add(a);
-//        collection.Add(b);
-//        collection.Add(c);
-//        collection.Write();
-//        Console.WriteLine();
-//        collection.Remove(b);
-//        collection.Write();
-//        Console.WriteLine();
-//        Console.WriteLine(collection.IndexOf(a));
-//    }
-//}
+class Program
+{
+    static void Main()
+    {
+        CCollection collection = new CCollection();
+        Plant a = new("green", 1.2);
+        Plant b = new("blue", 2.5);
+        Plant c = new("black", 5.3);
+        collection.Add(a);
+        collection.Add(b);
+        collection.Add(c);
+        collection.Write();
+        Console.WriteLine();
+        collection.Remove(b);
+        collection.Write();
+        Console.WriteLine();
+        Console.WriteLine(collection.IndexOf(a));
+    }
+}
