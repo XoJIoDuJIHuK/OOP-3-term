@@ -68,39 +68,39 @@ class CCollection : IList<Plant>
         }
         return -1;
     }
-//    public void Insert(int index, Plant item)
-//    {
-//        Add(item);
-//    }
-//    public bool Remove(Plant item)
-//    {
-//        return _set.Remove(item);
-//    }
-//    public void RemoveAt(int index)
-//    {
-//        int i = 0;
-//        foreach (var plant in _set)
-//        {
-//            if (i == index)
-//            {
-//                Remove(plant);
-//                return;
-//            }
-//            i++;
-//        }
-//    }
-//    IEnumerator IEnumerable.GetEnumerator()
-//    {
-//        return GetEnumerator();
-//    }
-//    public void Write()
-//    {
-//        foreach(var item in _set)
-//        {
-//            Console.WriteLine(item.ToString());
-//        }
-//    }
-//}
+    public void Insert(int index, Plant item)
+    {
+        Add(item);
+    }
+    public bool Remove(Plant item)
+    {
+        return _set.Remove(item);
+    }
+    public void RemoveAt(int index)
+    {
+        int i = 0;
+        foreach (var plant in _set)
+        {
+            if (i == index)
+            {
+                Remove(plant);
+                return;
+            }
+            i++;
+        }
+    }
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
+    }
+    public void Write()
+    {
+        foreach (var item in _set)
+        {
+            Console.WriteLine(item.ToString());
+        }
+    }
+}
 
 //class Program
 //{
