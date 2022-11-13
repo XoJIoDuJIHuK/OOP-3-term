@@ -25,19 +25,19 @@ class CCollection : IList<Plant>
     {
         _set = new HashSet<Plant>();
     }
-//    public Plant this[int i]
-//    {
-//        get { return new Plant("red", 0); }
-//        set { }
-//    }
-//    public int Count
-//    {
-//        get { return _set.Count; }
-//    }
-//    public bool IsReadOnly
-//    {
-//        get { return false; }
-//    }
+    public Plant this[int i]
+    {
+        get { return new Plant("red", 0); }
+        set { }
+    }
+    public int Count
+    {
+        get { return _set.Count; }
+    }
+    public bool IsReadOnly
+    {
+        get { return false; }
+    }
 //    public void Add(Plant item)
 //    {
 //        _set.Add(item);
