@@ -71,37 +71,37 @@
             }
         }
     }
-    //public static void Invoke(A obj, string methodName, string[] pars)
-    //{
-    //    Type type = obj.GetType();
-    //    var method = type.GetMethod(methodName);
-    //    string p1 = pars[0];
-    //    int p2 = int.Parse(pars[1]);
-    //    object[] parameters = new object[2];
-    //    parameters[0] = p1;
-    //    parameters[1] = p2;
-    //    method?.Invoke(obj, parameters);
-    //}
-    //public static T Create<T>(Type type) where T : class
-    //{
-    //    object newObj = Activator.CreateInstance(type);
-    //    T ret = newObj as T;
-    //    return ret;
-    //}
+    public static void Invoke(A obj, string methodName, string[] pars)
+    {
+        Type type = obj.GetType();
+        var method = type.GetMethod(methodName);
+        string p1 = pars[0];
+        int p2 = int.Parse(pars[1]);
+        object[] parameters = new object[2];
+        parameters[0] = p1;
+        parameters[1] = p2;
+        method?.Invoke(obj, parameters);
+    }
+    public static T Create<T>(Type type) where T : class
+    {
+        object newObj = Activator.CreateInstance(type);
+        T ret = newObj as T;
+        return ret;
+    }
 }
-//class A
-//{
-//    public static void B(string p1, int p2)
-//    {
-//        Console.WriteLine($"type: {p1.GetType()} value: {p1}");
-//        Console.WriteLine($"type: {p2.GetType()} value: {p2}");
-//    }
-//    public string str;
-//    public A()
-//    {
-//        str = "qwerty";
-//    }
-//}
+class A
+{
+    public static void B(string p1, int p2)
+    {
+        Console.WriteLine($"type: {p1.GetType()} value: {p1}");
+        Console.WriteLine($"type: {p2.GetType()} value: {p2}");
+    }
+    public string str;
+    public A()
+    {
+        str = "qwerty";
+    }
+}
 //class Program
 //{
 //    static string GenerateString()
