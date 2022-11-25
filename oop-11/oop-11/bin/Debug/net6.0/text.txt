@@ -1,0 +1,499 @@
+This type has doesn't have public constructors
+Assembly name: System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+Public method LastIndexOf
+Public method LastIndexOf
+Public method LastIndexOf
+Public method LastIndexOf
+Public method LastIndexOf
+Public method PadRight
+Public method PadRight
+Public method Remove
+Public method Remove
+Public method Replace
+Public method Replace
+Public method Replace
+Public method Replace
+Public method ReplaceLineEndings
+Public method ReplaceLineEndings
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Substring
+Public method Substring
+Public method ToLower
+Public method ToLower
+Public method ToLowerInvariant
+Public method ToUpper
+Public method ToUpper
+Public method ToUpperInvariant
+Public method Trim
+Public method Trim
+Public method Trim
+Public method TrimStart
+Public method TrimStart
+Public method TrimStart
+Public method TrimEnd
+Public method TrimEnd
+Public method TrimEnd
+Public method Contains
+Public method Contains
+Public method Contains
+Public method Contains
+Public method IndexOf
+Public method IndexOf
+Public method IndexOf
+Public method IndexOf
+Public method IndexOfAny
+Public method IndexOfAny
+Public method IndexOfAny
+Public method IndexOf
+Public method IndexOf
+Public method IndexOf
+Public method IndexOf
+Public method IndexOf
+Public method IndexOf
+Public method LastIndexOf
+Public method LastIndexOf
+Public method LastIndexOf
+Public method LastIndexOfAny
+Public method LastIndexOfAny
+Public method LastIndexOfAny
+Public method LastIndexOf
+Public method IsNullOrEmpty
+Public method IsNullOrWhiteSpace
+Public method GetPinnableReference
+Public method ToString
+Public method ToString
+Public method GetEnumerator
+Public method EnumerateRunes
+Public method GetTypeCode
+Public method IsNormalized
+Public method IsNormalized
+Public method Normalize
+Public method Normalize
+Public method get_Chars
+Public method get_Length
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Format
+Public method Format
+Public method Format
+Public method Format
+Public method Format
+Public method Format
+Public method Format
+Public method Format
+Public method Insert
+Public method Join
+Public method Join
+Public method Join
+Public method Join
+Public method Join
+Public method Join
+Public method Join
+Public method Join
+Public method Join
+Public method PadLeft
+Public method PadLeft
+Public method Intern
+Public method IsInterned
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method CompareOrdinal
+Public method CompareOrdinal
+Public method CompareTo
+Public method CompareTo
+Public method EndsWith
+Public method EndsWith
+Public method EndsWith
+Public method EndsWith
+Public method Equals
+Public method Equals
+Public method Equals
+Public method Equals
+Public method Equals
+Public method op_Equality
+Public method op_Inequality
+Public method GetHashCode
+Public method GetHashCode
+Public method GetHashCode
+Public method GetHashCode
+Public method StartsWith
+Public method StartsWith
+Public method StartsWith
+Public method StartsWith
+Public method Create
+Public method Create
+Public method Create
+Public method op_Implicit
+Public method Clone
+Public method Copy
+Public method CopyTo
+Public method CopyTo
+Public method TryCopyTo
+Public method ToCharArray
+Public method ToCharArray
+Public method GetType
+Field Empty
+Property Chars
+Property Length
+Interface IComparable
+Interface IEnumerable
+Interface IConvertible
+Interface IEnumerable`1
+Interface IComparable`1
+Interface IEquatable`1
+Interface ICloneable
+Method with parameter String: LastIndexOf
+Method with parameter String: LastIndexOf
+Method with parameter String: LastIndexOf
+Method with parameter String: LastIndexOf
+Method with parameter String: LastIndexOf
+Method with parameter String: Replace
+Method with parameter String: Replace
+Method with parameter String: Replace
+Method with parameter String: ReplaceLineEndings
+Method with parameter String: Split
+Method with parameter String: Split
+Method with parameter String: Contains
+Method with parameter String: Contains
+Method with parameter String: IndexOf
+Method with parameter String: IndexOf
+Method with parameter String: IndexOf
+Method with parameter String: IndexOf
+Method with parameter String: IndexOf
+Method with parameter String: IndexOf
+Method with parameter String: LastIndexOf
+Method with parameter String: IsNullOrEmpty
+Method with parameter String: IsNullOrWhiteSpace
+Method with parameter String: Concat
+Method with parameter String: Concat
+Method with parameter String: Concat
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Insert
+Method with parameter String: Join
+Method with parameter String: Join
+Method with parameter String: Join
+Method with parameter String: Join
+Method with parameter String: Join
+Method with parameter String: Intern
+Method with parameter String: IsInterned
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: CompareOrdinal
+Method with parameter String: CompareOrdinal
+Method with parameter String: CompareTo
+Method with parameter String: EndsWith
+Method with parameter String: EndsWith
+Method with parameter String: EndsWith
+Method with parameter String: Equals
+Method with parameter String: Equals
+Method with parameter String: Equals
+Method with parameter String: Equals
+Method with parameter String: op_Equality
+Method with parameter String: op_Inequality
+Method with parameter String: StartsWith
+Method with parameter String: StartsWith
+Method with parameter String: StartsWith
+Method with parameter String: op_Implicit
+Method with parameter String: Copy
+This type has doesn't have public constructors
+Assembly name: System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+Public method LastIndexOf
+Public method LastIndexOf
+Public method LastIndexOf
+Public method LastIndexOf
+Public method LastIndexOf
+Public method PadRight
+Public method PadRight
+Public method Remove
+Public method Remove
+Public method Replace
+Public method Replace
+Public method Replace
+Public method Replace
+Public method ReplaceLineEndings
+Public method ReplaceLineEndings
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Split
+Public method Substring
+Public method Substring
+Public method ToLower
+Public method ToLower
+Public method ToLowerInvariant
+Public method ToUpper
+Public method ToUpper
+Public method ToUpperInvariant
+Public method Trim
+Public method Trim
+Public method Trim
+Public method TrimStart
+Public method TrimStart
+Public method TrimStart
+Public method TrimEnd
+Public method TrimEnd
+Public method TrimEnd
+Public method Contains
+Public method Contains
+Public method Contains
+Public method Contains
+Public method IndexOf
+Public method IndexOf
+Public method IndexOf
+Public method IndexOf
+Public method IndexOfAny
+Public method IndexOfAny
+Public method IndexOfAny
+Public method IndexOf
+Public method IndexOf
+Public method IndexOf
+Public method IndexOf
+Public method IndexOf
+Public method IndexOf
+Public method LastIndexOf
+Public method LastIndexOf
+Public method LastIndexOf
+Public method LastIndexOfAny
+Public method LastIndexOfAny
+Public method LastIndexOfAny
+Public method LastIndexOf
+Public method IsNullOrEmpty
+Public method IsNullOrWhiteSpace
+Public method GetPinnableReference
+Public method ToString
+Public method ToString
+Public method GetEnumerator
+Public method EnumerateRunes
+Public method GetTypeCode
+Public method IsNormalized
+Public method IsNormalized
+Public method Normalize
+Public method Normalize
+Public method get_Chars
+Public method get_Length
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Concat
+Public method Format
+Public method Format
+Public method Format
+Public method Format
+Public method Format
+Public method Format
+Public method Format
+Public method Format
+Public method Insert
+Public method Join
+Public method Join
+Public method Join
+Public method Join
+Public method Join
+Public method Join
+Public method Join
+Public method Join
+Public method Join
+Public method PadLeft
+Public method PadLeft
+Public method Intern
+Public method IsInterned
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method Compare
+Public method CompareOrdinal
+Public method CompareOrdinal
+Public method CompareTo
+Public method CompareTo
+Public method EndsWith
+Public method EndsWith
+Public method EndsWith
+Public method EndsWith
+Public method Equals
+Public method Equals
+Public method Equals
+Public method Equals
+Public method Equals
+Public method op_Equality
+Public method op_Inequality
+Public method GetHashCode
+Public method GetHashCode
+Public method GetHashCode
+Public method GetHashCode
+Public method StartsWith
+Public method StartsWith
+Public method StartsWith
+Public method StartsWith
+Public method Create
+Public method Create
+Public method Create
+Public method op_Implicit
+Public method Clone
+Public method Copy
+Public method CopyTo
+Public method CopyTo
+Public method TryCopyTo
+Public method ToCharArray
+Public method ToCharArray
+Public method GetType
+Field Empty
+Property Chars
+Property Length
+Interface IComparable
+Interface IEnumerable
+Interface IConvertible
+Interface IEnumerable`1
+Interface IComparable`1
+Interface IEquatable`1
+Interface ICloneable
+Method with parameter String: LastIndexOf
+Method with parameter String: LastIndexOf
+Method with parameter String: LastIndexOf
+Method with parameter String: LastIndexOf
+Method with parameter String: LastIndexOf
+Method with parameter String: Replace
+Method with parameter String: Replace
+Method with parameter String: Replace
+Method with parameter String: ReplaceLineEndings
+Method with parameter String: Split
+Method with parameter String: Split
+Method with parameter String: Contains
+Method with parameter String: Contains
+Method with parameter String: IndexOf
+Method with parameter String: IndexOf
+Method with parameter String: IndexOf
+Method with parameter String: IndexOf
+Method with parameter String: IndexOf
+Method with parameter String: IndexOf
+Method with parameter String: LastIndexOf
+Method with parameter String: IsNullOrEmpty
+Method with parameter String: IsNullOrWhiteSpace
+Method with parameter String: Concat
+Method with parameter String: Concat
+Method with parameter String: Concat
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Format
+Method with parameter String: Insert
+Method with parameter String: Join
+Method with parameter String: Join
+Method with parameter String: Join
+Method with parameter String: Join
+Method with parameter String: Join
+Method with parameter String: Intern
+Method with parameter String: IsInterned
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: Compare
+Method with parameter String: CompareOrdinal
+Method with parameter String: CompareOrdinal
+Method with parameter String: CompareTo
+Method with parameter String: EndsWith
+Method with parameter String: EndsWith
+Method with parameter String: EndsWith
+Method with parameter String: Equals
+Method with parameter String: Equals
+Method with parameter String: Equals
+Method with parameter String: Equals
+Method with parameter String: op_Equality
+Method with parameter String: op_Inequality
+Method with parameter String: StartsWith
+Method with parameter String: StartsWith
+Method with parameter String: StartsWith
+Method with parameter String: op_Implicit
+Method with parameter String: Copy
+This type has doesn't have public constructors
+Public method get_Item
+Public method set_Item
+Public method get_Count
+Public method get_IsReadOnly
+Public method Add
+Public method Clear
+Public method Contains
+Public method CopyTo
+Public method GetEnumerator
+Public method IndexOf
+Public method Insert
+Public method Remove
+Public method RemoveAt
+Public method Write
+Public method GetType
+Public method ToString
+Public method Equals
+Public method GetHashCode
