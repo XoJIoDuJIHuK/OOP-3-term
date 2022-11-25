@@ -102,47 +102,47 @@ class A
         str = "qwerty";
     }
 }
-//class Program
-//{
-//    static string GenerateString()
-//    {
-//        string source = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM 1234567890";
-//        var rand = new Random();
-//        int length = rand.Next(1, 20);
-//        string result = "";
-//        for (int i = 0; i < length; i++)
-//        {
-//            result += source[rand.Next(0, source.Length)];
-//        }
-//        return result;
-//    }
-//    static void Main()
-//    {
-//        Type type = typeof(string);
-//        Reflector.PublicConstructorsExist(type);
-//        Reflector.GetAssemblyName(type);
-//        Reflector.GetPublicMethods(type);
-//        Reflector.GetFields(type);
-//        Reflector.GetInterfaces(type);
-//        Reflector.GetMethodsByParameter(type, typeof(string));
-//        //Task1-g
-//        A a = new();
-//        var pars = File.ReadAllLines("params.txt");
-//        Reflector.Invoke(a, "B", pars);
-//        pars[0] = GenerateString();
-//        Random random = new Random();
-//        pars[1] = random.Next().ToString();
-//        Reflector.Invoke(a, "B", pars);
+class Program
+{
+    static string GenerateString()
+    {
+        string source = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM 1234567890";
+        var rand = new Random();
+        int length = rand.Next(1, 20);
+        string result = "";
+        for (int i = 0; i < length; i++)
+        {
+            result += source[rand.Next(0, source.Length)];
+        }
+        return result;
+    }
+    static void Main()
+    {
+        Type type = typeof(string);
+        Reflector.PublicConstructorsExist(type);
+        Reflector.GetAssemblyName(type);
+        Reflector.GetPublicMethods(type);
+        Reflector.GetFields(type);
+        Reflector.GetInterfaces(type);
+        Reflector.GetMethodsByParameter(type, typeof(string));
+        //Task1-g
+        A a = new();
+        var pars = File.ReadAllLines("params.txt");
+        Reflector.Invoke(a, "B", pars);
+        pars[0] = GenerateString();
+        Random random = new Random();
+        pars[1] = random.Next().ToString();
+        Reflector.Invoke(a, "B", pars);
 
-//        //Task2
-//        Type typePlant = typeof(Plant);
-//        Type typeCCollection = typeof(CCollection);
-//        Reflector.PublicConstructorsExist(typePlant);
-//        Reflector.GetPublicMethods(typeCCollection);
-//        //Task3
-//        A a1 = new();
-//        Console.WriteLine($"a1: {a1.str}");
-//        A a2 = Reflector.Create<A>(typeof(A));
-//        Console.WriteLine($"a2: {a2.str}");
-//    }
-//}
+        //Task2
+        Type typePlant = typeof(Plant);
+        Type typeCCollection = typeof(CCollection);
+        Reflector.PublicConstructorsExist(typePlant);
+        Reflector.GetPublicMethods(typeCCollection);
+        //Task3
+        A a1 = new();
+        Console.WriteLine($"a1: {a1.str}");
+        A a2 = Reflector.Create<A>(typeof(A));
+        Console.WriteLine($"a2: {a2.str}");
+    }
+}
