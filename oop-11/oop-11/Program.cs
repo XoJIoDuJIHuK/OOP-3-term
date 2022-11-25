@@ -34,60 +34,60 @@
             if (m.IsPublic) File.AppendAllText(_fileName, "Public method " + m.Name + '\n');
         }
     }
-    //public static void GetFields(Type t)
-    //{
-    //    var fields = t.GetFields();
-    //    var properties = t.GetProperties();
-    //    foreach (var f in fields)
-    //    {
-    //        File.AppendAllText(_fileName, "Field " + f.Name + '\n');
-    //    }
-    //    foreach (var p in properties)
-    //    {
-    //        File.AppendAllText(_fileName, "Property " + p.Name + '\n');
-    //    }
-    //}
-    //public static void GetInterfaces(Type t)
-    //{
-    //    var interfaces = t.GetInterfaces();
-    //    foreach (var i in interfaces)
-    //    {
-    //        File.AppendAllText(_fileName, "Interface " + i.Name + '\n');
-    //    }
-    //}
-    //public static void GetMethodsByParameter(Type t, Type p)
-    //{
-    //    var methods = t.GetMethods();
-    //    foreach (var m in methods)
-    //    {
-    //        var pars = m.GetParameters();
-    //        foreach (var parm in pars)
-    //        {
-    //            if (parm.ParameterType == p)
-    //            {
-    //                File.AppendAllText(_fileName, "Method with parameter " + p.Name + ": " + m.Name + "\n");
-    //                break;
-    //            }
-    //        }
-    //    }
-    //}
-    public static void Invoke(A obj, string methodName, string[] pars)
+    public static void GetFields(Type t)
     {
-        Type type = obj.GetType();
-        var method = type.GetMethod(methodName);
-        string p1 = pars[0];
-        int p2 = int.Parse(pars[1]);
-        object[] parameters = new object[2];
-        parameters[0] = p1;
-        parameters[1] = p2;
-        method?.Invoke(obj, parameters);
+        var fields = t.GetFields();
+        var properties = t.GetProperties();
+        foreach (var f in fields)
+        {
+            File.AppendAllText(_fileName, "Field " + f.Name + '\n');
+        }
+        foreach (var p in properties)
+        {
+            File.AppendAllText(_fileName, "Property " + p.Name + '\n');
+        }
     }
-    public static T Create<T>(Type type) where T : class
+    public static void GetInterfaces(Type t)
     {
-        object newObj = Activator.CreateInstance(type);
-        T ret = newObj as T;
-        return ret;
+        var interfaces = t.GetInterfaces();
+        foreach (var i in interfaces)
+        {
+            File.AppendAllText(_fileName, "Interface " + i.Name + '\n');
+        }
     }
+    public static void GetMethodsByParameter(Type t, Type p)
+    {
+        var methods = t.GetMethods();
+        foreach (var m in methods)
+        {
+            var pars = m.GetParameters();
+            foreach (var parm in pars)
+            {
+                if (parm.ParameterType == p)
+                {
+                    File.AppendAllText(_fileName, "Method with parameter " + p.Name + ": " + m.Name + "\n");
+                    break;
+                }
+            }
+        }
+    }
+    //public static void Invoke(A obj, string methodName, string[] pars)
+    //{
+    //    Type type = obj.GetType();
+    //    var method = type.GetMethod(methodName);
+    //    string p1 = pars[0];
+    //    int p2 = int.Parse(pars[1]);
+    //    object[] parameters = new object[2];
+    //    parameters[0] = p1;
+    //    parameters[1] = p2;
+    //    method?.Invoke(obj, parameters);
+    //}
+    //public static T Create<T>(Type type) where T : class
+    //{
+    //    object newObj = Activator.CreateInstance(type);
+    //    T ret = newObj as T;
+    //    return ret;
+    //}
 }
 //class A
 //{
