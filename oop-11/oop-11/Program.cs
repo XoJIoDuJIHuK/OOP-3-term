@@ -1,76 +1,76 @@
 ﻿static class Reflector
 {
-    //static string _fileName = "text.txt";
-    //public static void GetAssemblyName(Type type)
-    //{
-    //    string str = "Assembly name: " + type.Assembly.ToString() + '\n';
-    //    File.AppendAllText(_fileName, str);
-    //}
-    //public static void PublicConstructorsExist(Type type)
-    //{
-    //    string str = "This type ";
-    //    bool found = false;
-    //    var constructors = type.GetConstructors();
-    //    foreach (var c in constructors)
-    //    {
-    //        if (c.IsPublic)
-    //        {
-    //            str += "has ";
-    //            break;
-    //        }
-    //    }
-    //    if (!found)
-    //    {
-    //        str += "doesn't have ";
-    //    }
-    //    str += "public constructors\n";
-    //    File.AppendAllText(_fileName, str);
-    //}
-    //public static void GetPublicMethods(Type type)
-    //{
-    //    var methods = type.GetMethods();
-    //    foreach (var m in methods)
-    //    {
-    //        if (m.IsPublic) File.AppendAllText(_fileName, "Public method " + m.Name + '\n');
-    //    }
-    //}
-    public static void GetFields(Type t)
+    static string _fileName = "text.txt";
+    public static void GetAssemblyName(Type type)
     {
-        var fields = t.GetFields();
-        var properties = t.GetProperties();
-        foreach (var f in fields)
-        {
-            File.AppendAllText(_fileName, "Field " + f.Name + '\n');
-        }
-        foreach (var p in properties)
-        {
-            File.AppendAllText(_fileName, "Property " + p.Name + '\n');
-        }
+        string str = "Assembly name: " + type.Assembly.ToString() + '\n';
+        File.AppendAllText(_fileName, str);
     }
-    public static void GetInterfaces(Type t)
+    public static void PublicConstructorsExist(Type type)
     {
-        var interfaces = t.GetInterfaces();
-        foreach (var i in interfaces)
+        string str = "This type ";
+        bool found = false;
+        var constructors = type.GetConstructors();
+        foreach (var c in constructors)
         {
-            File.AppendAllText(_fileName, "Interface " + i.Name + '\n');
-        }
-    }
-    public static void GetMethodsByParameter(Type t, Type p)
-    {
-        var methods = t.GetMethods();
-        foreach (var m in methods)
-        {
-            var pars = m.GetParameters();
-            foreach (var parm in pars)
+            if (c.IsPublic)
             {
-                if (parm.ParameterType == p)
-                {
-                    File.AppendAllText(_fileName, "Method with parameter " + p.Name + ": " + m.Name + "\n");
-                    break;
-                }
+                str += "has ";
+                break;
             }
         }
+        if (!found)
+        {
+            str += "doesn't have ";
+        }
+        str += "public constructors\n";
+        File.AppendAllText(_fileName, str);
     }
+    public static void GetPublicMethods(Type type)
+    {
+        var methods = type.GetMethods();
+        foreach (var m in methods)
+        {
+            if (m.IsPublic) File.AppendAllText(_fileName, "Public method " + m.Name + '\n');
+        }
+    }
+    //public static void GetFields(Type t)
+    //{
+    //    var fields = t.GetFields();
+    //    var properties = t.GetProperties();
+    //    foreach (var f in fields)
+    //    {
+    //        File.AppendAllText(_fileName, "Field " + f.Name + '\n');
+    //    }
+    //    foreach (var p in properties)
+    //    {
+    //        File.AppendAllText(_fileName, "Property " + p.Name + '\n');
+    //    }
+    //}
+    //public static void GetInterfaces(Type t)
+    //{
+    //    var interfaces = t.GetInterfaces();
+    //    foreach (var i in interfaces)
+    //    {
+    //        File.AppendAllText(_fileName, "Interface " + i.Name + '\n');
+    //    }
+    //}
+    //public static void GetMethodsByParameter(Type t, Type p)
+    //{
+    //    var methods = t.GetMethods();
+    //    foreach (var m in methods)
+    //    {
+    //        var pars = m.GetParameters();
+    //        foreach (var parm in pars)
+    //        {
+    //            if (parm.ParameterType == p)
+    //            {
+    //                File.AppendAllText(_fileName, "Method with parameter " + p.Name + ": " + m.Name + "\n");
+    //                break;
+    //            }
+    //        }
+    //    }
+    //}
     public static void Invoke(A obj, string methodName, string[] pars)
     {
         Type type = obj.GetType();
