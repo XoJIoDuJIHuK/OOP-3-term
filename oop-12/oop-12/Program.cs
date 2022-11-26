@@ -134,13 +134,13 @@ static class TOVFileManager
         }
         Directory.Move("TOVFiles", @"TOVInspect\TOVFiles");
     }
-//    static public void TaskC()//работает
-//    {
-//        TOVLog.Write($"Created zip-archive");
-//        if (File.Exists("zip.zip")) throw new UserException("zip.zip already exists");
-//        ZipFile.CreateFromDirectory(@"TOVInspect\TOVFiles", "zip.zip");
-//        ZipFile.ExtractToDirectory("zip.zip", "new unzipped");
-//    }
+    static public void TaskC()//работает
+    {
+        TOVLog.Write($"Created zip-archive");
+        if (File.Exists("zip.zip")) throw new UserException("zip.zip already exists");
+        ZipFile.CreateFromDirectory(@"TOVInspect\TOVFiles", "zip.zip");
+        ZipFile.ExtractToDirectory("zip.zip", "new unzipped");
+    }
 //    static bool Predicate(DateTime dt, string method = "year", bool interval = false, int start = 0, int end = 0)
 //    {
 //        int dtValue = 0;
