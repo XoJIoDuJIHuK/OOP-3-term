@@ -7,14 +7,14 @@ class UserException : Exception
         _message = message;
     }
 }
-//static class TOVLog
-//{
-//    static public void Write(string str)
-//    {
-//        File.AppendAllText("TOVlogfile.txt", $"{DateTime.Now}, {str}, " +
-//            $"{new FileInfo("TOVlogfile.txt").FullName}\n" );
-//    }
-//}
+static class TOVLog
+{
+    static public void Write(string str)
+    {
+        File.AppendAllText("TOVlogfile.txt", $"{DateTime.Now}, {str}, " +
+            $"{new FileInfo("TOVlogfile.txt").FullName}\n");
+    }
+}
 //static class TOVDiskInfo
 //{
 //    static DriveInfo[] allDrives = DriveInfo.GetDrives();
