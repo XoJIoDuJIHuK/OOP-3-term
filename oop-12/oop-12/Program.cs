@@ -199,31 +199,31 @@ static class TOVFileManager
         foreach (string line in linesOfThisHour) { Console.WriteLine(line); }
     }
 }
-//class Program
-//{
-//    const string FIO = "TOV";
-//    static void ClassNameStartsWithFIOCheck(Type type)
-//    {
-//        if (type.Name.Substring(0, 3) == FIO) throw new UserException("Class name doesn't start with FIO");
-//    }
-//    static void Main()//вроде пашет
-//    {
-//        try
-//        {
-//            TOVDirInfo.Write("new folder");
-//            TOVDiskInfo.Write();
-//            TOVFileInfo.Write("TOVlogfile.txt");
-//            TOVFileManager.TaskAFirstHalf("D:\\");
-//            TOVFileManager.TaskASecondHalf();
-//            TOVFileManager.TaskB("new folder", ".txt");
-//            TOVFileManager.TaskC();
-//            Console.WriteLine("\nTask07");
-//            TOVFileManager.Task07("day", false, 26);
-//        }
-//        catch (UserException e)
-//        {
-//            Console.WriteLine("ERROR: "+ e._message);
-//        }
-//    }
-//}
-////Обработка ошибок есть, проверка того, начинается ли класс с ФИО, есть, но не используется, потому что зачем
+class Program
+{
+    const string FIO = "TOV";
+    static void ClassNameStartsWithFIOCheck(Type type)
+    {
+        if (type.Name.Substring(0, 3) == FIO) throw new UserException("Class name doesn't start with FIO");
+    }
+    static void Main()//вроде пашет
+    {
+        try
+        {
+            TOVDirInfo.Write("new folder");
+            TOVDiskInfo.Write();
+            TOVFileInfo.Write("TOVlogfile.txt");
+            TOVFileManager.TaskAFirstHalf("D:\\");
+            TOVFileManager.TaskASecondHalf();
+            TOVFileManager.TaskB("new folder", ".txt");
+            TOVFileManager.TaskC();
+            Console.WriteLine("\nTask07");
+            TOVFileManager.Task07("day", false, 26);
+        }
+        catch (UserException e)
+        {
+            Console.WriteLine("ERROR: " + e._message);
+        }
+    }
+}
+//Обработка ошибок есть, проверка того, начинается ли класс с ФИО, есть, но не используется, потому что зачем
