@@ -15,26 +15,26 @@ static class TOVLog
             $"{new FileInfo("TOVlogfile.txt").FullName}\n");
     }
 }
-//static class TOVDiskInfo
-//{
-//    static DriveInfo[] allDrives = DriveInfo.GetDrives();
-//    static public void Write()
-//    {
-//        TOVLog.Write("Written disk info");
-//        foreach (var d in allDrives)
-//        {
-//            Console.WriteLine("Drive name: {0}", d.Name);
-//            Console.WriteLine("Drive type: {0}", d.DriveType);
-//            if (!d.IsReady) continue;
-//            Console.WriteLine("Volume Label: {0}", d.VolumeLabel);
-//            Console.WriteLine("File system: {0}", d.DriveFormat);
-//            Console.WriteLine("Root: {0}", d.RootDirectory);
-//            Console.WriteLine("Total size: {0}", d.TotalSize);
-//            Console.WriteLine("Free size: {0}", d.TotalFreeSpace);
-//            Console.WriteLine("Available: {0}", d.AvailableFreeSpace);
-//        }
-//    }
-//}
+static class TOVDiskInfo
+{
+    static DriveInfo[] allDrives = DriveInfo.GetDrives();
+    static public void Write()
+    {
+        TOVLog.Write("Written disk info");
+        foreach (var d in allDrives)
+        {
+            Console.WriteLine("Drive name: {0}", d.Name);
+            Console.WriteLine("Drive type: {0}", d.DriveType);
+            if (!d.IsReady) continue;
+            Console.WriteLine("Volume Label: {0}", d.VolumeLabel);
+            Console.WriteLine("File system: {0}", d.DriveFormat);
+            Console.WriteLine("Root: {0}", d.RootDirectory);
+            Console.WriteLine("Total size: {0}", d.TotalSize);
+            Console.WriteLine("Free size: {0}", d.TotalFreeSpace);
+            Console.WriteLine("Available: {0}", d.AvailableFreeSpace);
+        }
+    }
+}
 //static class TOVDirInfo
 //{
 //    static public void Write(string path)
