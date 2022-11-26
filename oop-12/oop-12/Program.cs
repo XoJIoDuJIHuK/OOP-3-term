@@ -62,22 +62,22 @@ static class TOVDirInfo
         }
     }
 }
-//static class TOVFileInfo
-//{
-//    static public void Write(string path)
-//    {
-//        if (!File.Exists(path)) throw new UserException($"File {path} does not exist");
-//        TOVLog.Write("Written file info");
-//        FileInfo f = new FileInfo(path);
-//        if (!f.Exists) throw new UserException($"File {path} doesn't exist");
-//        Console.WriteLine($"File name: {f.FullName}");
-//        Console.WriteLine($"Size: {f.Length}");
-//        Console.WriteLine($"Extension: {f.Extension}");
-//        Console.WriteLine($"Path: {f.DirectoryName}");
-//        Console.WriteLine($"Created: {f.CreationTime}");
-//        Console.WriteLine($"Edited: {f.LastWriteTime}");
-//    }
-//}
+static class TOVFileInfo
+{
+    static public void Write(string path)
+    {
+        if (!File.Exists(path)) throw new UserException($"File {path} does not exist");
+        TOVLog.Write("Written file info");
+        FileInfo f = new FileInfo(path);
+        if (!f.Exists) throw new UserException($"File {path} doesn't exist");
+        Console.WriteLine($"File name: {f.FullName}");
+        Console.WriteLine($"Size: {f.Length}");
+        Console.WriteLine($"Extension: {f.Extension}");
+        Console.WriteLine($"Path: {f.DirectoryName}");
+        Console.WriteLine($"Created: {f.CreationTime}");
+        Console.WriteLine($"Edited: {f.LastWriteTime}");
+    }
+}
 //static class TOVFileManager
 //{
 //    static public void TaskAFirstHalf(string driveName)//имя диска задавать как С:\
