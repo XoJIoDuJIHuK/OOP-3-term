@@ -35,33 +35,33 @@ static class TOVDiskInfo
         }
     }
 }
-//static class TOVDirInfo
-//{
-//    static public void Write(string path)
-//    {
-//        if (!Directory.Exists(path)) throw new UserException($"Directory {path} does not exist");
-//        TOVLog.Write("Written directory info");
-//        if (Directory.Exists(path))
-//        {
-//            Console.WriteLine("SubDir:");
-//            string[] dirs = Directory.GetDirectories(path);
-//            Console.WriteLine($"Directories amount: {dirs.Length}");
-//            foreach (string s in dirs)
-//            {
-//                Console.WriteLine(s);
-//            }
-//            Console.WriteLine();
-//            string[] files = Directory.GetFiles(path);
-//            Console.WriteLine($"Amount of files: {files.Length}");
-//            Console.WriteLine($"Created: {Directory.GetCreationTime(path)}");
-//            Console.WriteLine("Files:");
-//            foreach (string s in files)
-//            {
-//                Console.WriteLine(s);
-//            }
-//        }
-//    }
-//}
+static class TOVDirInfo
+{
+    static public void Write(string path)
+    {
+        if (!Directory.Exists(path)) throw new UserException($"Directory {path} does not exist");
+        TOVLog.Write("Written directory info");
+        if (Directory.Exists(path))
+        {
+            Console.WriteLine("SubDir:");
+            string[] dirs = Directory.GetDirectories(path);
+            Console.WriteLine($"Directories amount: {dirs.Length}");
+            foreach (string s in dirs)
+            {
+                Console.WriteLine(s);
+            }
+            Console.WriteLine();
+            string[] files = Directory.GetFiles(path);
+            Console.WriteLine($"Amount of files: {files.Length}");
+            Console.WriteLine($"Created: {Directory.GetCreationTime(path)}");
+            Console.WriteLine("Files:");
+            foreach (string s in files)
+            {
+                Console.WriteLine(s);
+            }
+        }
+    }
+}
 //static class TOVFileInfo
 //{
 //    static public void Write(string path)
