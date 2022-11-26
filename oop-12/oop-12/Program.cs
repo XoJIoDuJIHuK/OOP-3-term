@@ -116,22 +116,24 @@ static class TOVFileManager
         File.Move("TOVdirinfoCOPY.txt", "TOVdirinfoRENAMED.txt");
         File.Delete("TOVdirinfo.txt");
     }
-//    static public void TaskB(string path, string ext)//точно работает, но расширение должно быть с точкой
-//    {
-//        TOVLog.Write($"Copied files with extension {ext} to {path}");
-//        if (Directory.Exists("TOVFiles")) throw new UserException($"Folder TOVFiles already exists");
-//        Directory.CreateDirectory("TOVFiles");
-//        IEnumerable<string> files = from f in Directory.GetFiles(path) where new FileInfo(f).Extension ==
-//                                        ext select f; ;
-//        foreach (var f in files)
-//        {
-//            FileInfo fi = new FileInfo(f);
-//            if (File.Exists(@$"TOVFiles\{fi.Name}")) throw new UserException($"File TOVFiles\\{fi.Name} " +
-//                $"already exists");
-//            File.Copy($"{f}", Path.Combine("TOVFiles", fi.Name));
-//        }
-//        Directory.Move("TOVFiles", @"TOVInspect\TOVFiles");
-//    }
+    static public void TaskB(string path, string ext)//точно работает, но расширение должно быть с точкой
+    {
+        TOVLog.Write($"Copied files with extension {ext} to {path}");
+        if (Directory.Exists("TOVFiles")) throw new UserException($"Folder TOVFiles already exists");
+        Directory.CreateDirectory("TOVFiles");
+        IEnumerable<string> files = from f in Directory.GetFiles(path)
+                                    where new FileInfo(f).Extension ==
+                                        ext
+                                    select f; ;
+        foreach (var f in files)
+        {
+            FileInfo fi = new FileInfo(f);
+            if (File.Exists(@$"TOVFiles\{fi.Name}")) throw new UserException($"File TOVFiles\\{fi.Name} " +
+                $"already exists");
+            File.Copy($"{f}", Path.Combine("TOVFiles", fi.Name));
+        }
+        Directory.Move("TOVFiles", @"TOVInspect\TOVFiles");
+    }
 //    static public void TaskC()//работает
 //    {
 //        TOVLog.Write($"Created zip-archive");
