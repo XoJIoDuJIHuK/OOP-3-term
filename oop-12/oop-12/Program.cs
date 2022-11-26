@@ -141,64 +141,64 @@ static class TOVFileManager
         ZipFile.CreateFromDirectory(@"TOVInspect\TOVFiles", "zip.zip");
         ZipFile.ExtractToDirectory("zip.zip", "new unzipped");
     }
-//    static bool Predicate(DateTime dt, string method = "year", bool interval = false, int start = 0, int end = 0)
-//    {
-//        int dtValue = 0;
-//        switch (method)
-//        {
-//            case "year":
-//                {
-//                    dtValue = dt.Year;
-//                    break;
-//                }
-//            case "month":
-//                {
-//                    dtValue = dt.Month;
-//                    break;
-//                }
-//            case "day":
-//                {
-//                    dtValue = dt.Day;
-//                    break;
-//                }
-//            case "hour":
-//                {
-//                    dtValue = dt.Hour;
-//                    break;
-//                }
-//            case "minute":
-//                {
-//                    dtValue = dt.Minute;
-//                    break;
-//                }
-//            case "second":
-//                {
-//                    dtValue = dt.Second;
-//                    break;
-//                }
-//            default: break;//вставить новое исключение
-//        }
-//        if (interval) return (dtValue <= end && dtValue >= start);
-//        else return (dtValue == start);
-//    }
-//    static public void Task07(string method = "year", bool interval = false, int start = 0, int end = 0)
-//    {
-//        TOVLog.Write($"Written lines based on {method} {start}");
-//        if (!File.Exists("TOVlogfile.txt")) throw new UserException("Task07: TOVlogfile does not exist");
-//        IEnumerable<string> lines = from l in File.ReadAllLines("TOVlogfile.txt")
-//                                    where Predicate(DateTime.Parse(l.Substring(0, 19)), method, interval, 
-//                                        start, end)
-//                                    select l;
-//        IEnumerable<string> linesOfThisHour = from l in File.ReadAllLines("TOVlogfile.txt")
-//                                    where Predicate(DateTime.Parse(l.Substring(0, 19)), "hour", false, 
-//                                        DateTime.Now.Hour)
-//                                    select l;
-//        Console.WriteLine("Task07 lines:");
-//        foreach(string line in lines) { Console.WriteLine(line); }
-//        Console.WriteLine("Lines of this hour:");
-//        foreach (string line in linesOfThisHour) { Console.WriteLine(line); }
-//    }
-//}
+    static bool Predicate(DateTime dt, string method = "year", bool interval = false, int start = 0, int end = 0)
+    {
+        int dtValue = 0;
+        switch (method)
+        {
+            case "year":
+                {
+                    dtValue = dt.Year;
+                    break;
+                }
+            case "month":
+                {
+                    dtValue = dt.Month;
+                    break;
+                }
+            case "day":
+                {
+                    dtValue = dt.Day;
+                    break;
+                }
+            case "hour":
+                {
+                    dtValue = dt.Hour;
+                    break;
+                }
+            case "minute":
+                {
+                    dtValue = dt.Minute;
+                    break;
+                }
+            case "second":
+                {
+                    dtValue = dt.Second;
+                    break;
+                }
+            default: break;//вставить новое исключение
+        }
+        if (interval) return (dtValue <= end && dtValue >= start);
+        else return (dtValue == start);
+    }
+    static public void Task07(string method = "year", bool interval = false, int start = 0, int end = 0)
+    {
+        TOVLog.Write($"Written lines based on {method} {start}");
+        if (!File.Exists("TOVlogfile.txt")) throw new UserException("Task07: TOVlogfile does not exist");
+        IEnumerable<string> lines = from l in File.ReadAllLines("TOVlogfile.txt")
+                                    where Predicate(DateTime.Parse(l.Substring(0, 19)), method, interval,
+                                        start, end)
+                                    select l;
+        IEnumerable<string> linesOfThisHour = from l in File.ReadAllLines("TOVlogfile.txt")
+                                              where Predicate(DateTime.Parse(l.Substring(0, 19)), "hour", false,
+                                                  DateTime.Now.Hour)
+                                              select l;
+        Console.WriteLine("Task07 lines:");
+        foreach (string line in lines) { Console.WriteLine(line); }
+        Console.WriteLine("Lines of this hour:");
+        foreach (string line in linesOfThisHour) { Console.WriteLine(line); }
+    }
+}
 //class Program
 //{
 //    const string FIO = "TOV";
