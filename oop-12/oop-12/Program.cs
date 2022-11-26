@@ -78,8 +78,8 @@ static class TOVFileInfo
         Console.WriteLine($"Edited: {f.LastWriteTime}");
     }
 }
-//static class TOVFileManager
-//{
+static class TOVFileManager
+{
 //    static public void TaskAFirstHalf(string driveName)//имя диска задавать как С:\
 //    {
 //        TOVLog.Write($"Written disk {driveName} info");
