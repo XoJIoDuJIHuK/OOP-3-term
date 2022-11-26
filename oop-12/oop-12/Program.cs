@@ -80,42 +80,42 @@ static class TOVFileInfo
 }
 static class TOVFileManager
 {
-//    static public void TaskAFirstHalf(string driveName)//имя диска задавать как С:\
-//    {
-//        TOVLog.Write($"Written disk {driveName} info");
-//        var allDrives = DriveInfo.GetDrives();
-//        bool driveFound = false;
-//        foreach (var d in allDrives)
-//        {
-//            if (d.Name == driveName)
-//            {
-//                Console.WriteLine("папки");
-//                foreach (var p in Directory.GetDirectories(driveName))
-//                {
-//                    Console.WriteLine(p);
-//                }
-//                Console.WriteLine("файлы");
-//                foreach (var p in Directory.GetFiles(driveName))
-//                {
-//                    Console.WriteLine(p);
-//                }
-//                driveFound = true;
-//                break;
-//            }
-//        }
-//        if (!driveFound) throw new UserException($"Drive {driveName} does not exist");
-//    }
-//    static public void TaskASecondHalf()//работает
-//    {
-//        TOVLog.Write($"Created folder and file, copied, moved and deleted file");
-//        if (Directory.Exists("TOVInspect")) throw new UserException($"Folder TOVInspect already exists");
-//        Directory.CreateDirectory("TOVInspect");
-//        File.WriteAllText("TOVdirinfo.txt", Directory.GetLastAccessTime("TOVInspect").ToString());
-//        if (File.Exists("TOVdirinfoCOPY")) throw new UserException($"File TOVdirinfoCOPY.txt already exists");
-//        File.Copy("TOVdirinfo.txt", "TOVdirinfoCOPY.txt");
-//        File.Move("TOVdirinfoCOPY.txt", "TOVdirinfoRENAMED.txt");
-//        File.Delete("TOVdirinfo.txt");
-//    }
+    static public void TaskAFirstHalf(string driveName)//имя диска задавать как С:\
+    {
+        TOVLog.Write($"Written disk {driveName} info");
+        var allDrives = DriveInfo.GetDrives();
+        bool driveFound = false;
+        foreach (var d in allDrives)
+        {
+            if (d.Name == driveName)
+            {
+                Console.WriteLine("папки");
+                foreach (var p in Directory.GetDirectories(driveName))
+                {
+                    Console.WriteLine(p);
+                }
+                Console.WriteLine("файлы");
+                foreach (var p in Directory.GetFiles(driveName))
+                {
+                    Console.WriteLine(p);
+                }
+                driveFound = true;
+                break;
+            }
+        }
+        if (!driveFound) throw new UserException($"Drive {driveName} does not exist");
+    }
+    static public void TaskASecondHalf()//работает
+    {
+        TOVLog.Write($"Created folder and file, copied, moved and deleted file");
+        if (Directory.Exists("TOVInspect")) throw new UserException($"Folder TOVInspect already exists");
+        Directory.CreateDirectory("TOVInspect");
+        File.WriteAllText("TOVdirinfo.txt", Directory.GetLastAccessTime("TOVInspect").ToString());
+        if (File.Exists("TOVdirinfoCOPY")) throw new UserException($"File TOVdirinfoCOPY.txt already exists");
+        File.Copy("TOVdirinfo.txt", "TOVdirinfoCOPY.txt");
+        File.Move("TOVdirinfoCOPY.txt", "TOVdirinfoRENAMED.txt");
+        File.Delete("TOVdirinfo.txt");
+    }
 //    static public void TaskB(string path, string ext)//точно работает, но расширение должно быть с точкой
 //    {
 //        TOVLog.Write($"Copied files with extension {ext} to {path}");
