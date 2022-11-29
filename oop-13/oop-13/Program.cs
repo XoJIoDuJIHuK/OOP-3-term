@@ -158,20 +158,20 @@ class Program
             }
         }
 
-//        //XPath
-//        Console.WriteLine("\nXPath");
+        //XPath
+        Console.WriteLine("\nXPath");
 
-//        XmlDocument xmlDocXPath = new();
-//        xmlDocXPath.Load("list.xml");
+        XmlDocument xmlDocXPath = new();
+        xmlDocXPath.Load("list.xml");
 
-//        XmlNode xmlRoot = xmlDocXPath.SelectSingleNode("ArrayOfSteamvessel")!;
-//        XmlNodeList nodeSteamvessel = xmlRoot.SelectNodes("Steamvessel")!;
+        XmlNode xmlRoot = xmlDocXPath.SelectSingleNode("ArrayOfSteamvessel")!;
+        XmlNodeList nodeSteamvessel = xmlRoot.SelectNodes("Steamvessel")!;
 
-//        foreach (XmlNode item in nodeSteamvessel)
-//        {
-//            Console.WriteLine($"{item.SelectSingleNode("_Name")!.InnerText} " +
-//                $"{item.SelectSingleNode("_Velocity")!.InnerText}");
-//        }
+        foreach (XmlNode item in nodeSteamvessel)
+        {
+            Console.WriteLine($"{item.SelectSingleNode("_Name")!.InnerText} " +
+                $"{item.SelectSingleNode("_Velocity")!.InnerText}");
+        }
 
 //        //Linq to XML
 
