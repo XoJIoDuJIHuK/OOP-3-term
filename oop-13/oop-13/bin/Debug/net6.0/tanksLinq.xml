@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TANK_PARK>
+  <TANK model="Maus">
+    <PRICE>999999989</PRICE>
+  </TANK>
+  <TANK model="Pz. Kpfw. 3E">
+    <PRICE>1000</PRICE>
+  </TANK>
+  <TANK model="T-62A">
+    <PRICE>223435</PRICE>
+  </TANK>
+</TANK_PARK>
