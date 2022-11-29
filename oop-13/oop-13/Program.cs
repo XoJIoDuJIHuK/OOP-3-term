@@ -57,82 +57,82 @@ public class Steamvessel : Ship
         return $"Steamvessel {_Name}, velocity: {_Velocity}, capacity: {_PassengersCapacity}";
     }
 }
-//class Program
-//{
-//    static void Write(Steamvessel? obj, string str)
-//    {
-//        Console.WriteLine($"{str} {obj._Name}, скорость: {obj._Velocity}, " +
-//                $"кол-во пассажиров: {obj._PassengersCapacity}");
-//    }
-//    static void Main()
-//    {
-//        //бинарный
-//        Console.WriteLine("Binary");
-//        //ser
-//        BinaryFormatter binFormatter = new();
-//        var Titanic = new Steamvessel("Titanic") { _PassengersCapacity = 999, _Velocity = 9 };
-//        Write(Titanic, "было");
-//        using (FileStream stream = new("ship.dat", FileMode.OpenOrCreate))
-//        {
-//            binFormatter.Serialize(stream, Titanic);
-//        }
-//        //deser
-//        using (FileStream stream = new("ship.dat", FileMode.OpenOrCreate))
-//        {
-//            Steamvessel someShip = (Steamvessel)binFormatter.Deserialize(stream);
-//            Write(someShip, "стало");
-//        }
-//        File.Delete("ship.dat");
+class Program
+{
+    static void Write(Steamvessel? obj, string str)
+    {
+        Console.WriteLine($"{str} {obj._Name}, скорость: {obj._Velocity}, " +
+                $"кол-во пассажиров: {obj._PassengersCapacity}");
+    }
+    static void Main()
+    {
+        //бинарный
+        Console.WriteLine("Binary");
+        //ser
+        BinaryFormatter binFormatter = new();
+        var Titanic = new Steamvessel("Titanic") { _PassengersCapacity = 999, _Velocity = 9 };
+        Write(Titanic, "было");
+        using (FileStream stream = new("ship.dat", FileMode.OpenOrCreate))
+        {
+            binFormatter.Serialize(stream, Titanic);
+        }
+        //deser
+        using (FileStream stream = new("ship.dat", FileMode.OpenOrCreate))
+        {
+            Steamvessel someShip = (Steamvessel)binFormatter.Deserialize(stream);
+            Write(someShip, "стало");
+        }
+        File.Delete("ship.dat");
 
-//        //soap
-//        Console.WriteLine("\nSOAP");
-//        SoapFormatter soapFormatter = new();
-//        //ser
-//        using (FileStream stream = new("ship.soap", FileMode.OpenOrCreate))
-//        {
-//            //Steamvessel Olympia = new Steamvessel("Olympia") { _PassengersCapacity = 999, _Velocity = 9 };
-//            Write(Titanic, "было");
-//            soapFormatter.Serialize(stream, Titanic);
-//        }
-//        //deser
-//        using (FileStream stream = new("ship.soap", FileMode.OpenOrCreate))
-//        {
-//            Steamvessel someShip = (Steamvessel)soapFormatter.Deserialize(stream);
-//            Write(someShip, "стало");
-//        }
-//        File.Delete("ship.soap");
+        //soap
+        Console.WriteLine("\nSOAP");
+        SoapFormatter soapFormatter = new();
+        //ser
+        using (FileStream stream = new("ship.soap", FileMode.OpenOrCreate))
+        {
+            //Steamvessel Olympia = new Steamvessel("Olympia") { _PassengersCapacity = 999, _Velocity = 9 };
+            Write(Titanic, "было");
+            soapFormatter.Serialize(stream, Titanic);
+        }
+        //deser
+        using (FileStream stream = new("ship.soap", FileMode.OpenOrCreate))
+        {
+            Steamvessel someShip = (Steamvessel)soapFormatter.Deserialize(stream);
+            Write(someShip, "стало");
+        }
+        File.Delete("ship.soap");
 
-//        //xml
-//        Console.WriteLine("\nXML");
-//        Write(Titanic, "было");
-//        XmlSerializer xs = new(typeof(Steamvessel));
-//        using (StreamWriter sw = new("ship.xml"))
-//        {
-//            xs.Serialize(sw, Titanic);
-//        }
-//        using (StreamReader sr = new("ship.xml"))
-//        {
-//            var someShip = (xs.Deserialize(sr) as Steamvessel)!;
-//            Write(someShip, "стало");
-//        }
-//        File.Delete("ship.xml");
+        //xml
+        Console.WriteLine("\nXML");
+        Write(Titanic, "было");
+        XmlSerializer xs = new(typeof(Steamvessel));
+        using (StreamWriter sw = new("ship.xml"))
+        {
+            xs.Serialize(sw, Titanic);
+        }
+        using (StreamReader sr = new("ship.xml"))
+        {
+            var someShip = (xs.Deserialize(sr) as Steamvessel)!;
+            Write(someShip, "стало");
+        }
+        File.Delete("ship.xml");
 
-//        //json
-//        Console.WriteLine("\nJSON");
-//        using (FileStream fs = new("ship.json", FileMode.OpenOrCreate))
-//        {
-//            JsonSerializer.Serialize<Steamvessel>(fs, Titanic);
-//            Write(Titanic, "было");
-//        }
+        //json
+        Console.WriteLine("\nJSON");
+        using (FileStream fs = new("ship.json", FileMode.OpenOrCreate))
+        {
+            JsonSerializer.Serialize<Steamvessel>(fs, Titanic);
+            Write(Titanic, "было");
+        }
 
-//        // чтение данных
-//        using (FileStream fs = new("ship.json", FileMode.OpenOrCreate))
-//        {
-//            Steamvessel? someShip = JsonSerializer.Deserialize<Steamvessel>(fs);
-//            Write(someShip, "стало");
-//        }
+        // чтение данных
+        using (FileStream fs = new("ship.json", FileMode.OpenOrCreate))
+        {
+            Steamvessel? someShip = JsonSerializer.Deserialize<Steamvessel>(fs);
+            Write(someShip, "стало");
+        }
 
-//        File.Delete("ship.json");
+        File.Delete("ship.json");
 
 //        //collection
 //        Console.WriteLine("\nCollection");
