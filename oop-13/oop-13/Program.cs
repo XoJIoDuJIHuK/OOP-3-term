@@ -173,29 +173,29 @@ class Program
                 $"{item.SelectSingleNode("_Velocity")!.InnerText}");
         }
 
-//        //Linq to XML
+        //Linq to XML
 
-//        Console.WriteLine("\nLINQ to XML:");
-//        XElement NewTank(string attrValue, string childElemValue)
-//        {
-//            XElement ret = new("TANK");
-//            ret.Add(new XAttribute("model", attrValue));
-//            ret.Add(new XElement("PRICE", childElemValue));
-//            return ret;
-//        };
-//        XDocument xmlDoc = new();
-//        XElement tanks = new("TANK_PARK");
-//        tanks.Add(NewTank("Maus", "999999989"));
-//        tanks.Add(NewTank("Pz. Kpfw. 3E", "1000"));
-//        tanks.Add(NewTank("T-62A", "223435"));
-//        xmlDoc.Add(tanks);
-//        xmlDoc.Save("tanksLinq.xml");
+        Console.WriteLine("\nLINQ to XML:");
+        XElement NewTank(string attrValue, string childElemValue)
+        {
+            XElement ret = new("TANK");
+            ret.Add(new XAttribute("model", attrValue));
+            ret.Add(new XElement("PRICE", childElemValue));
+            return ret;
+        };
+        XDocument xmlDoc = new();
+        XElement tanks = new("TANK_PARK");
+        tanks.Add(NewTank("Maus", "999999989"));
+        tanks.Add(NewTank("Pz. Kpfw. 3E", "1000"));
+        tanks.Add(NewTank("T-62A", "223435"));
+        xmlDoc.Add(tanks);
+        xmlDoc.Save("tanksLinq.xml");
 
-//        Console.WriteLine("Tanks more expensive than 1000 money:");
-//        XDocument loadedDoc = XDocument.Load("tanksLinq.xml");
-//        var tanksList = from t in loadedDoc.Descendants("TANK") 
-//                        where int.Parse(t.Element("PRICE")!.Value) > 1000
-//                        select t.Attribute("model")!.Value;
-//        foreach(var t in tanksList) { Console.WriteLine(t); }
-//    }
-//}
+        Console.WriteLine("Tanks more expensive than 1000 money:");
+        XDocument loadedDoc = XDocument.Load("tanksLinq.xml");
+        var tanksList = from t in loadedDoc.Descendants("TANK")
+                        where int.Parse(t.Element("PRICE")!.Value) > 1000
+                        select t.Attribute("model")!.Value;
+        foreach (var t in tanksList) { Console.WriteLine(t); }
+    }
+}
