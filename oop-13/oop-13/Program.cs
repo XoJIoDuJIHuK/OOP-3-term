@@ -28,35 +28,35 @@ public class Ship
         _Name = "DefaultName";
     }
 }
-//[DataContract]
-//[Serializable]
-//public class Steamvessel : Ship
-//{
-//    [DataMember]
-//    public int _Velocity { get; set; } = -1;
-//    [XmlIgnore]
-//    [JsonIgnore]
-//    [field: NonSerialized]
-//    public int _PassengersCapacity { get; set; } = -1;
-//    public Steamvessel(string name)
-//    {
-//        var rand = new Random();
-//        _Name = name;
-//        _Velocity = rand.Next(1, 100);
-//        _PassengersCapacity = rand.Next(1, 1000);
-//    }
-//    public Steamvessel()
-//    {
-//        var rand = new Random();
-//        _Name = "DefaultName";
-//        _Velocity = rand.Next(1, 100);
-//        _PassengersCapacity = rand.Next(1, 1000);
-//    }
-//    public override string ToString()
-//    {
-//        return $"Steamvessel {_Name}, velocity: {_Velocity}, capacity: {_PassengersCapacity}";
-//    }
-//}
+[DataContract]
+[Serializable]
+public class Steamvessel : Ship
+{
+    [DataMember]
+    public int _Velocity { get; set; } = -1;
+    [XmlIgnore]
+    [JsonIgnore]
+    [field: NonSerialized]
+    public int _PassengersCapacity { get; set; } = -1;
+    public Steamvessel(string name)
+    {
+        var rand = new Random();
+        _Name = name;
+        _Velocity = rand.Next(1, 100);
+        _PassengersCapacity = rand.Next(1, 1000);
+    }
+    public Steamvessel()
+    {
+        var rand = new Random();
+        _Name = "DefaultName";
+        _Velocity = rand.Next(1, 100);
+        _PassengersCapacity = rand.Next(1, 1000);
+    }
+    public override string ToString()
+    {
+        return $"Steamvessel {_Name}, velocity: {_Velocity}, capacity: {_PassengersCapacity}";
+    }
+}
 //class Program
 //{
 //    static void Write(Steamvessel? obj, string str)
