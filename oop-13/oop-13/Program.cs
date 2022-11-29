@@ -134,29 +134,29 @@ class Program
 
         File.Delete("ship.json");
 
-//        //collection
-//        Console.WriteLine("\nCollection");
-//        XmlSerializer xmlSerializer = new(typeof(List<Steamvessel>));
-//        List<Steamvessel> xmlList = new();
-//        xmlList.Add(new Steamvessel("Adm. Kuznetsov"));
-//        xmlList.Add(new Steamvessel("Moskva"));
-//        xmlList.Add(new Steamvessel("Gnevny"));
-//        foreach (var s in xmlList) Write(s, "было");
-//        //ser
-//        using (FileStream topStream = new("list.xml", FileMode.Create))
-//        {
-//            xmlSerializer.Serialize(topStream, xmlList);
-//        }
-//        //deser
-//        using (FileStream topStream = new("list.xml", FileMode.OpenOrCreate))
-//        {
-//            List<Steamvessel> someShips = (List<Steamvessel>)xmlSerializer.Deserialize(topStream)!;
+        //collection
+        Console.WriteLine("\nCollection");
+        XmlSerializer xmlSerializer = new(typeof(List<Steamvessel>));
+        List<Steamvessel> xmlList = new();
+        xmlList.Add(new Steamvessel("Adm. Kuznetsov"));
+        xmlList.Add(new Steamvessel("Moskva"));
+        xmlList.Add(new Steamvessel("Gnevny"));
+        foreach (var s in xmlList) Write(s, "было");
+        //ser
+        using (FileStream topStream = new("list.xml", FileMode.Create))
+        {
+            xmlSerializer.Serialize(topStream, xmlList);
+        }
+        //deser
+        using (FileStream topStream = new("list.xml", FileMode.OpenOrCreate))
+        {
+            List<Steamvessel> someShips = (List<Steamvessel>)xmlSerializer.Deserialize(topStream)!;
 
-//            foreach (var item in someShips)
-//            {
-//                Write(item, "стало");
-//            }
-//        }
+            foreach (var item in someShips)
+            {
+                Write(item, "стало");
+            }
+        }
 
 //        //XPath
 //        Console.WriteLine("\nXPath");
