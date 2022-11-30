@@ -170,13 +170,13 @@ class Program
         //5. реализ. задачу на основе класса Timer
         //Каждую секунду вызывает WhatTimeIsIt
 
-        //TimerCallback timerCallback = new TimerCallback(WhatTimeIsIt);
-        //Timer timer = new Timer(timerCallback, null, 0, 1000);
-        //Thread.Sleep(5000);
+        TimerCallback timerCallback = new TimerCallback(WhatTimeIsIt);
+        Timer timer = new Timer(timerCallback, null, 0, 1000);
+        Thread.Sleep(5000);
 
-        //void WhatTimeIsIt(object obj)
-        //{
-        //    Console.WriteLine($"It's {DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}");
-        //}
+        void WhatTimeIsIt(object obj)
+        {
+            Console.WriteLine($"It's {DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}");
+        }
     }
 }
