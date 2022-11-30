@@ -97,9 +97,9 @@ class Program
         }
 
         //НЕ РАСКОММЕНТИРОВАТЬ
-        AppDomain newDomain = AppDomain.CreateDomain("qwerty");
-        newDomain.Load("System.Private.CoreLib");
-        AppDomain.Unload(newDomain);
+        //AppDomain newDomain = AppDomain.CreateDomain("qwerty");
+        //newDomain.Load("System.Private.CoreLib");
+        //AppDomain.Unload(newDomain);
 
 
         //Создайте в отдельном потоке следующую задачу расчета (можно сделать sleep для задержки)
@@ -107,9 +107,9 @@ class Program
         //управления потоком (запуск, приостановка, возобновление и т.д.) Во время выполнения выведите
         //информацию о статусе потока, имени, приоритете, числовой идентификатор и т.д.
 
-        //Thread NumbersThread = new(PrintS1mpleNumbers);
-        //NumbersThread.Start(42);
-        //Thread.Sleep(1000);
+        Thread NumbersThread = new(PrintS1mpleNumbers);
+        NumbersThread.Start(42);
+        Thread.Sleep(1000);
 
         //NumbersThread.Suspend();      НЕ РАСКОММЕНТИРОВАТЬ
 
