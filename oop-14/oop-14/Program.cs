@@ -147,10 +147,6 @@ class Program
 
 
 
-        ///4. созд 2 потока:
-        /// исп. средства синхронизации орган. работу потоков: 
-        /// вывод сначала чет, потом нечет 
-        /// послед. вывод 1 чет 1 нечет
         //Создайте два потока. Первый выводит четные числа, второй нечетные до n и записывают их в
         //общий файл и на консоль. Скорость расчета чисел у потоков – разная.
         //  a.Поменяйте приоритет одного из потоков.
@@ -174,13 +170,13 @@ class Program
         //5. реализ. задачу на основе класса Timer
         //Каждую секунду вызывает WhatTimeIsIt
 
-        TimerCallback timerCallback = new TimerCallback(WhatTimeIsIt);
-        Timer timer = new Timer(timerCallback, null, 0, 1000);
-        Thread.Sleep(5000);
+        //TimerCallback timerCallback = new TimerCallback(WhatTimeIsIt);
+        //Timer timer = new Timer(timerCallback, null, 0, 1000);
+        //Thread.Sleep(5000);
 
-        void WhatTimeIsIt(object obj)
-        {
-            Console.WriteLine($"It's {DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}");
-        }
+        //void WhatTimeIsIt(object obj)
+        //{
+        //    Console.WriteLine($"It's {DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}");
+        //}
     }
 }
