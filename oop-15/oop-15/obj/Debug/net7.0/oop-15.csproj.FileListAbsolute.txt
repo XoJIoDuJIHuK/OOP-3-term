@@ -1,0 +1,15 @@
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\bin\Debug\net7.0\oop-15.exe
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\bin\Debug\net7.0\oop-15.deps.json
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\bin\Debug\net7.0\oop-15.runtimeconfig.json
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\bin\Debug\net7.0\oop-15.dll
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\bin\Debug\net7.0\oop-15.pdb
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\obj\Debug\net7.0\oop-15.csproj.AssemblyReference.cache
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\obj\Debug\net7.0\oop-15.GeneratedMSBuildEditorConfig.editorconfig
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\obj\Debug\net7.0\oop-15.AssemblyInfoInputs.cache
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\obj\Debug\net7.0\oop-15.AssemblyInfo.cs
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\obj\Debug\net7.0\oop-15.csproj.CoreCompileInputs.cache
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\obj\Debug\net7.0\oop-15.dll
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\obj\Debug\net7.0\refint\oop-15.dll
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\obj\Debug\net7.0\oop-15.pdb
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\obj\Debug\net7.0\oop-15.genruntimeconfig.cache
+D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-15\oop-15\obj\Debug\net7.0\ref\oop-15.dll
