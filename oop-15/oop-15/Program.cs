@@ -236,9 +236,9 @@ class Program
         Task.WaitAll(Cn, Pr);
 
         //Task9
-        //Console.WriteLine("--------------------\nTask 9\n--------------------");
-        //AsyncMet();
-        //Thread.Sleep(10000);
+        Console.WriteLine("--------------------\nTask 9\n--------------------");
+        AsyncMet();
+        Thread.Sleep(10000);
     }
     class Appliances
     {
