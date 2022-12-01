@@ -176,64 +176,64 @@ class Program
         sw.Stop();
 
         //Task7
-        //Console.WriteLine("--------------------\nTask 7\n--------------------");
-        //sw.Restart();
-        //Parallel.Invoke(() =>
-        //{
-        //    for (int i = 0; i <= mil7; i++)
-        //    {
-        //        string str = "";
-        //        for (int j = 0; j < new Random().Next(2, 10); j++)
-        //        {
-        //            str += (char)(new Random().Next(34, 100));
-        //        }
-        //    }
-        //});
-        //Console.WriteLine(sw.ElapsedMilliseconds);
+        Console.WriteLine("--------------------\nTask 7\n--------------------");
+        sw.Restart();
+        Parallel.Invoke(() =>
+        {
+            for (int i = 0; i <= mil7; i++)
+            {
+                string str = "";
+                for (int j = 0; j < new Random().Next(2, 10); j++)
+                {
+                    str += (char)(new Random().Next(34, 100));
+                }
+            }
+        });
+        Console.WriteLine(sw.ElapsedMilliseconds);
 
         //Task8
         Console.WriteLine("--------------------\nTask 8\n--------------------");
-        Store topshop = new Store();
-        Provider provider1 = new Provider(1000);
-        Provider provider2 = new Provider(1500);
-        Provider provider3 = new Provider(200);
-        Provider provider4 = new Provider(700);
-        Provider provider5 = new Provider(800);
-        Customer customer1 = new Customer();
-        Customer customer2 = new Customer();
-        Customer customer3 = new Customer();
-        Customer customer4 = new Customer();
-        Customer customer5 = new Customer();
-        Customer customer6 = new Customer();
-        Customer customer7 = new Customer();
-        Customer customer8 = new Customer();
-        Customer customer9 = new Customer();
-        Customer customer10 = new Customer();
+        //Store topshop = new Store();
+        //Provider provider1 = new Provider(1000);
+        //Provider provider2 = new Provider(1500);
+        //Provider provider3 = new Provider(200);
+        //Provider provider4 = new Provider(700);
+        //Provider provider5 = new Provider(800);
+        //Customer customer1 = new Customer();
+        //Customer customer2 = new Customer();
+        //Customer customer3 = new Customer();
+        //Customer customer4 = new Customer();
+        //Customer customer5 = new Customer();
+        //Customer customer6 = new Customer();
+        //Customer customer7 = new Customer();
+        //Customer customer8 = new Customer();
+        //Customer customer9 = new Customer();
+        //Customer customer10 = new Customer();
 
-        Task Pr = new Task(() => {
-            provider1.toStockUp(topshop, new Appliances($"appliance1"));
-            provider2.toStockUp(topshop, new Appliances($"appliance2"));
-            provider3.toStockUp(topshop, new Appliances($"appliance3"));
-            provider4.toStockUp(topshop, new Appliances($"appliance4"));
-            provider5.toStockUp(topshop, new Appliances($"appliance5"));
-            topshop.Appliances.CompleteAdding();
-        });
-        Task Cn = new Task(() => {
-            customer1.pickupFromStock(topshop);
-            customer2.pickupFromStock(topshop);
-            customer3.pickupFromStock(topshop);
-            customer4.pickupFromStock(topshop);
-            customer5.pickupFromStock(topshop);
-            customer6.pickupFromStock(topshop);
-            customer7.pickupFromStock(topshop);
-            customer8.pickupFromStock(topshop);
-            customer9.pickupFromStock(topshop);
-            customer10.pickupFromStock(topshop);
-        });
+        //Task Pr = new Task(() => {
+        //    provider1.toStockUp(topshop, new Appliances($"appliance1"));
+        //    provider2.toStockUp(topshop, new Appliances($"appliance2"));
+        //    provider3.toStockUp(topshop, new Appliances($"appliance3"));
+        //    provider4.toStockUp(topshop, new Appliances($"appliance4"));
+        //    provider5.toStockUp(topshop, new Appliances($"appliance5"));
+        //    topshop.Appliances.CompleteAdding();
+        //});
+        //Task Cn = new Task(() => {
+        //    customer1.pickupFromStock(topshop);
+        //    customer2.pickupFromStock(topshop);
+        //    customer3.pickupFromStock(topshop);
+        //    customer4.pickupFromStock(topshop);
+        //    customer5.pickupFromStock(topshop);
+        //    customer6.pickupFromStock(topshop);
+        //    customer7.pickupFromStock(topshop);
+        //    customer8.pickupFromStock(topshop);
+        //    customer9.pickupFromStock(topshop);
+        //    customer10.pickupFromStock(topshop);
+        //});
 
-        Pr.Start();
-        Cn.Start();
-        Task.WaitAll(Cn, Pr);
+        //Pr.Start();
+        //Cn.Start();
+        //Task.WaitAll(Cn, Pr);
 
         //Task9
         Console.WriteLine("--------------------\nTask 9\n--------------------");
