@@ -24,65 +24,66 @@ class Program
     {
         //Task1
         Console.WriteLine("--------------------\nTask 1\n--------------------");
-        CancellationTokenSource cancelTokenSource = new CancellationTokenSource();
-        //CancellationToken token = cancelTokenSource.Token;
-        //int multiplier = 5;
-        //Task task1 = new(() => {
-        //    int size = 1;
-        //    Stopwatch time = new();
-        //    time.Start();
-        //    List<int> vector = new();
-        //    for (int j = 0; j < size; j++)
-        //    {
-        //        if (token.IsCancellationRequested)
-        //        {
-        //            Console.WriteLine($"\n\nTime Elapsed: {time.Elapsed}");
-        //            return;
-        //        }
-        //        vector.Add(j);
-        //    }
-        //    for (int j = 0; j < size; j++)
-        //    {
-        //        if (token.IsCancellationRequested)
-        //        {
-        //            Console.WriteLine($"\n\nTime Elapsed: {time.Elapsed}");
-        //            return;
-        //        }
-        //        vector[j] *= multiplier;
-        //    }
-        //    for (int j = 0; j < size; j++)
-        //    {
-        //        if (token.IsCancellationRequested)
-        //        {
-        //            Console.WriteLine($"\n\nTime Elapsed: {time.Elapsed}");
-        //            return;
-        //        }
-        //        Console.Write($"{vector[j]} ");
-        //    }
-        //    time.Stop();
-        //    void Exit()
-        //    {
-        //        Console.WriteLine($"\n\nTime Elapsed: {time.Elapsed}");
-        //        return;
-        //    }
-        //});
-        //task1.Start();
+        //CancellationTokenSource cancelTokenSource = new CancellationTokenSource();
+        CancellationToken token = cancelTokenSource.Token;
+        int multiplier = 5;
+        Task task1 = new(() =>
+        {
+            int size = 1;
+            Stopwatch time = new();
+            time.Start();
+            List<int> vector = new();
+            for (int j = 0; j < size; j++)
+            {
+                if (token.IsCancellationRequested)
+                {
+                    Console.WriteLine($"\n\nTime Elapsed: {time.Elapsed}");
+                    return;
+                }
+                vector.Add(j);
+            }
+            for (int j = 0; j < size; j++)
+            {
+                if (token.IsCancellationRequested)
+                {
+                    Console.WriteLine($"\n\nTime Elapsed: {time.Elapsed}");
+                    return;
+                }
+                vector[j] *= multiplier;
+            }
+            for (int j = 0; j < size; j++)
+            {
+                if (token.IsCancellationRequested)
+                {
+                    Console.WriteLine($"\n\nTime Elapsed: {time.Elapsed}");
+                    return;
+                }
+                Console.Write($"{vector[j]} ");
+            }
+            time.Stop();
+            void Exit()
+            {
+                Console.WriteLine($"\n\nTime Elapsed: {time.Elapsed}");
+                return;
+            }
+        });
+        task1.Start();
 
-        //Thread.Sleep(1000);
-        //cancelTokenSource.Cancel();
-        //Thread.Sleep(1000);
+        Thread.Sleep(1000);
+        cancelTokenSource.Cancel();
+        Thread.Sleep(1000);
 
-        //int id = task1.Id;
-        //bool comp = task1.IsCompleted;
-        //TaskStatus status = task1.Status;
+        int id = task1.Id;
+        bool comp = task1.IsCompleted;
+        TaskStatus status = task1.Status;
 
-        //task1.Wait();
+        task1.Wait();
 
-        //Console.WriteLine("------------Task Status------------");
-        //Console.WriteLine($"Task Id: {id}");
-        //Console.WriteLine($"Task Completed: {comp}");
-        //Console.WriteLine($"Task Status: {status}");
-        //Console.WriteLine("-----------------------------------");
+        Console.WriteLine("------------Task Status------------");
+        Console.WriteLine($"Task Id: {id}");
+        Console.WriteLine($"Task Completed: {comp}");
+        Console.WriteLine($"Task Status: {status}");
+        Console.WriteLine("-----------------------------------");
 
         //Task2 lmao
         //Task4
