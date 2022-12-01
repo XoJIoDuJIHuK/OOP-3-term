@@ -88,47 +88,47 @@ class Program
         //Task2 lmao
         //Task4
         Console.WriteLine("--------------------\nTask 4\n--------------------");
-        //var tasks4 = new Task<int>[3];
-        //int Sum(int a, int b) => a + b;
-        //for (int i = 0; i < tasks4.Length; i++)
-        //{
-        //    Random random = new();
-        //    tasks4[i] = new(() => Sum(random.Next(1, 100), random.Next(1, 100)));
-        //    tasks4[i].Start();
-        //}
-        //Task.WaitAll(tasks4);
-        //var task4 = new Task(() => { Console.WriteLine($"Sum of results of three tasks: {tasks4[0].Result 
-        //    * tasks4[1].Result - tasks4[2].Result}"); });
-        //task4.Start();
-        //task4.Wait();
+        var tasks4 = new Task<int>[3];
+        int Sum(int a, int b) => a + b;
+        for (int i = 0; i < tasks4.Length; i++)
+        {
+            Random random = new();
+            tasks4[i] = new(() => Sum(random.Next(1, 100), random.Next(1, 100)));
+            tasks4[i].Start();
+        }
+        Task.WaitAll(tasks4);
+        var task4 = new Task(() => { Console.WriteLine($"Sum of results of three tasks: {tasks4[0].Result 
+            * tasks4[1].Result - tasks4[2].Result}"); });
+        task4.Start();
+        task4.Wait();
 
         //Task5
         //1
         Console.WriteLine("--------------------\nTask 5 part 1\n--------------------");
-        Task task5_1 = new Task(() => Console.WriteLine($"Current Task: {Task.CurrentId}"));
+        //Task task5_1 = new Task(() => Console.WriteLine($"Current Task: {Task.CurrentId}"));
 
-        Task task5_2 = task5_1.ContinueWith(t =>
-            Console.WriteLine($"Current Task: {Task.CurrentId}  Previous Task: {t.Id}"));
+        //Task task5_2 = task5_1.ContinueWith(t =>
+        //    Console.WriteLine($"Current Task: {Task.CurrentId}  Previous Task: {t.Id}"));
 
-        Task task5_3 = task5_2.ContinueWith(t =>
-            Console.WriteLine($"Current Task: {Task.CurrentId}  Previous Task: {t.Id}"));
+        //Task task5_3 = task5_2.ContinueWith(t =>
+        //    Console.WriteLine($"Current Task: {Task.CurrentId}  Previous Task: {t.Id}"));
 
-        Task task5_4 = task5_3.ContinueWith(t =>
-            Console.WriteLine($"Current Task: {Task.CurrentId}  Previous Task: {t.Id}"));
+        //Task task5_4 = task5_3.ContinueWith(t =>
+        //    Console.WriteLine($"Current Task: {Task.CurrentId}  Previous Task: {t.Id}"));
 
-        task5_1.Start();
+        //task5_1.Start();
 
-        task5_4.Wait();
+        //task5_4.Wait();
 
-        //2
-        Console.WriteLine("--------------------\nTask 5 part 2\n--------------------");
-        Task<int> what = Task.Run(() => Enumerable.Range(1, 100000).Count(n => (n % 2 == 0)));
-        var awaiter = what.GetAwaiter();
-        awaiter.OnCompleted(() => {
-            int res = awaiter.GetResult();
-            Console.WriteLine(res);
-        });
-        Thread.Sleep(1000);
+        ////2
+        //Console.WriteLine("--------------------\nTask 5 part 2\n--------------------");
+        //Task<int> what = Task.Run(() => Enumerable.Range(1, 100000).Count(n => (n % 2 == 0)));
+        //var awaiter = what.GetAwaiter();
+        //awaiter.OnCompleted(() => {
+        //    int res = awaiter.GetResult();
+        //    Console.WriteLine(res);
+        //});
+        //Thread.Sleep(1000);
 
         //Task6                     буст в 18 раз
         Console.WriteLine("--------------------\nTask 6 parallel\n--------------------");
