@@ -132,64 +132,64 @@ class Program
 
         //Task6                     буст в 18 раз
         Console.WriteLine("--------------------\nTask 6 parallel\n--------------------");
-        //Stopwatch sw = Stopwatch.StartNew();
-        //const int mil7 = 1;
-        //int[] arrPar = new int[mil7];
-        //int[] arrNon = new int[mil7];
-        //Parallel.For(0, 1000, z =>
-        //{
-        //    Random r = new();
-        //    for (int i = 0; i < mil7; i++) arrPar[i] = (r.Next(0, 10000) / 7);
-        //    int sum = 0;
-        //    foreach (var i in arrPar) sum += i;
-        //    //Console.Write($"{sw.ElapsedMilliseconds} ");
-        //});
-        //Console.WriteLine(sw.ElapsedMilliseconds);
-        //sw.Restart();
-        //Console.WriteLine("-----------------------Non-parallel------------------------");
-        //for (int j = 0; j < 1000; j++)
-        //{
-        //    Random r = new();
-        //    for (int i = 0; i < mil7; i++) arrNon[i] = (r.Next(0, 10000) / 7);
-        //    int sum = 0;
-        //    foreach (var i in arrNon) sum += i;
-        //    //Console.Write($"{sw.ElapsedMilliseconds} ");
-        //}
-        //Console.WriteLine(sw.ElapsedMilliseconds);
-
-        ////ну почти втрое
-        //Console.WriteLine("-----------------------Parallel foreach------------------------");
-        //sw.Restart();
-        //int sumTask7 = 0;
-        //Parallel.ForEach(arrPar, a =>
-        //{
-        //    sumTask7 += a * 31 / 13 + (int)Math.Sqrt(69);
-        //});
-        //Console.WriteLine(sw.ElapsedMilliseconds);
-
-        //Console.WriteLine("-----------------------Non-parallel foreach------------------------");
-        //sw.Restart();
-        //sumTask7 = 0;
-        //foreach (var a in arrPar) sumTask7 += a * 31 / 13 + (int)Math.Sqrt(69);
-        //Console.WriteLine(sw.ElapsedMilliseconds);
-
-        //sw.Stop();
-
-        //Task7
-        Console.WriteLine("--------------------\nTask 7\n--------------------");
-        sw.Restart();
-        Parallel.Invoke(() =>
+        Stopwatch sw = Stopwatch.StartNew();
+        const int mil7 = 1;
+        int[] arrPar = new int[mil7];
+        int[] arrNon = new int[mil7];
+        Parallel.For(0, 1000, z =>
         {
-            for (int i = 0; i <= mil7; i++)
-            {
-                string str = "";
-                for (int j = 0; j < new Random().Next(2, 10); j++)
-                {
-                    str += (char)(new Random().Next(34, 100));
-                }
-            }
+            Random r = new();
+            for (int i = 0; i < mil7; i++) arrPar[i] = (r.Next(0, 10000) / 7);
+            int sum = 0;
+            foreach (var i in arrPar) sum += i;
+            //Console.Write($"{sw.ElapsedMilliseconds} ");
         });
         Console.WriteLine(sw.ElapsedMilliseconds);
+        sw.Restart();
+        Console.WriteLine("-----------------------Non-parallel------------------------");
+        for (int j = 0; j < 1000; j++)
+        {
+            Random r = new();
+            for (int i = 0; i < mil7; i++) arrNon[i] = (r.Next(0, 10000) / 7);
+            int sum = 0;
+            foreach (var i in arrNon) sum += i;
+            //Console.Write($"{sw.ElapsedMilliseconds} ");
+        }
+        Console.WriteLine(sw.ElapsedMilliseconds);
+
+        //ну почти втрое
+        Console.WriteLine("-----------------------Parallel foreach------------------------");
+        sw.Restart();
+        int sumTask7 = 0;
+        Parallel.ForEach(arrPar, a =>
+        {
+            sumTask7 += a * 31 / 13 + (int)Math.Sqrt(69);
+        });
+        Console.WriteLine(sw.ElapsedMilliseconds);
+
+        Console.WriteLine("-----------------------Non-parallel foreach------------------------");
+        sw.Restart();
+        sumTask7 = 0;
+        foreach (var a in arrPar) sumTask7 += a * 31 / 13 + (int)Math.Sqrt(69);
+        Console.WriteLine(sw.ElapsedMilliseconds);
+
+        sw.Stop();
+
+        //Task7
+        //Console.WriteLine("--------------------\nTask 7\n--------------------");
+        //sw.Restart();
+        //Parallel.Invoke(() =>
+        //{
+        //    for (int i = 0; i <= mil7; i++)
+        //    {
+        //        string str = "";
+        //        for (int j = 0; j < new Random().Next(2, 10); j++)
+        //        {
+        //            str += (char)(new Random().Next(34, 100));
+        //        }
+        //    }
+        //});
+        //Console.WriteLine(sw.ElapsedMilliseconds);
 
         //Task8
         Console.WriteLine("--------------------\nTask 8\n--------------------");
