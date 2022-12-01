@@ -105,75 +105,75 @@ class Program
         //Task5
         //1
         Console.WriteLine("--------------------\nTask 5 part 1\n--------------------");
-        //Task task5_1 = new Task(() => Console.WriteLine($"Current Task: {Task.CurrentId}"));
+        Task task5_1 = new Task(() => Console.WriteLine($"Current Task: {Task.CurrentId}"));
 
-        //Task task5_2 = task5_1.ContinueWith(t =>
-        //    Console.WriteLine($"Current Task: {Task.CurrentId}  Previous Task: {t.Id}"));
+        Task task5_2 = task5_1.ContinueWith(t =>
+            Console.WriteLine($"Current Task: {Task.CurrentId}  Previous Task: {t.Id}"));
 
-        //Task task5_3 = task5_2.ContinueWith(t =>
-        //    Console.WriteLine($"Current Task: {Task.CurrentId}  Previous Task: {t.Id}"));
+        Task task5_3 = task5_2.ContinueWith(t =>
+            Console.WriteLine($"Current Task: {Task.CurrentId}  Previous Task: {t.Id}"));
 
-        //Task task5_4 = task5_3.ContinueWith(t =>
-        //    Console.WriteLine($"Current Task: {Task.CurrentId}  Previous Task: {t.Id}"));
+        Task task5_4 = task5_3.ContinueWith(t =>
+            Console.WriteLine($"Current Task: {Task.CurrentId}  Previous Task: {t.Id}"));
 
-        //task5_1.Start();
+        task5_1.Start();
 
-        //task5_4.Wait();
+        task5_4.Wait();
 
-        ////2
-        //Console.WriteLine("--------------------\nTask 5 part 2\n--------------------");
-        //Task<int> what = Task.Run(() => Enumerable.Range(1, 100000).Count(n => (n % 2 == 0)));
-        //var awaiter = what.GetAwaiter();
-        //awaiter.OnCompleted(() => {
-        //    int res = awaiter.GetResult();
-        //    Console.WriteLine(res);
-        //});
-        //Thread.Sleep(1000);
+        //2
+        Console.WriteLine("--------------------\nTask 5 part 2\n--------------------");
+        Task<int> what = Task.Run(() => Enumerable.Range(1, 100000).Count(n => (n % 2 == 0)));
+        var awaiter = what.GetAwaiter();
+        awaiter.OnCompleted(() => {
+            int res = awaiter.GetResult();
+            Console.WriteLine(res);
+        });
+        Thread.Sleep(1000);
 
         //Task6                     буст в 18 раз
         Console.WriteLine("--------------------\nTask 6 parallel\n--------------------");
-        Stopwatch sw = Stopwatch.StartNew();
-        const int mil7 = 1;
-        int[] arrPar = new int[mil7];
-        int[] arrNon = new int[mil7];
-        Parallel.For(0, 1000, z =>
-        {
-            Random r = new();
-            for (int i = 0; i < mil7; i++) arrPar[i] = (r.Next(0, 10000) / 7);
-            int sum = 0;
-            foreach (var i in arrPar) sum += i;
-            //Console.Write($"{sw.ElapsedMilliseconds} ");
-        });
-        Console.WriteLine(sw.ElapsedMilliseconds);
-        sw.Restart();
-        Console.WriteLine("-----------------------Non-parallel------------------------");
-        for (int j = 0; j < 1000; j++)
-        {
-            Random r = new();
-            for (int i = 0; i < mil7; i++) arrNon[i] = (r.Next(0, 10000) / 7);
-            int sum = 0;
-            foreach (var i in arrNon) sum += i;
-            //Console.Write($"{sw.ElapsedMilliseconds} ");
-        }
-        Console.WriteLine(sw.ElapsedMilliseconds);
+        //Stopwatch sw = Stopwatch.StartNew();
+        //const int mil7 = 1;
+        //int[] arrPar = new int[mil7];
+        //int[] arrNon = new int[mil7];
+        //Parallel.For(0, 1000, z =>
+        //{
+        //    Random r = new();
+        //    for (int i = 0; i < mil7; i++) arrPar[i] = (r.Next(0, 10000) / 7);
+        //    int sum = 0;
+        //    foreach (var i in arrPar) sum += i;
+        //    //Console.Write($"{sw.ElapsedMilliseconds} ");
+        //});
+        //Console.WriteLine(sw.ElapsedMilliseconds);
+        //sw.Restart();
+        //Console.WriteLine("-----------------------Non-parallel------------------------");
+        //for (int j = 0; j < 1000; j++)
+        //{
+        //    Random r = new();
+        //    for (int i = 0; i < mil7; i++) arrNon[i] = (r.Next(0, 10000) / 7);
+        //    int sum = 0;
+        //    foreach (var i in arrNon) sum += i;
+        //    //Console.Write($"{sw.ElapsedMilliseconds} ");
+        //}
+        //Console.WriteLine(sw.ElapsedMilliseconds);
 
-        //ну почти втрое
-        Console.WriteLine("-----------------------Parallel foreach------------------------");
-        sw.Restart();
-        int sumTask7 = 0;
-        Parallel.ForEach(arrPar, a =>
-        {
-            sumTask7 += a * 31 / 13 + (int)Math.Sqrt(69);
-        });
-        Console.WriteLine(sw.ElapsedMilliseconds);
+        ////ну почти втрое
+        //Console.WriteLine("-----------------------Parallel foreach------------------------");
+        //sw.Restart();
+        //int sumTask7 = 0;
+        //Parallel.ForEach(arrPar, a =>
+        //{
+        //    sumTask7 += a * 31 / 13 + (int)Math.Sqrt(69);
+        //});
+        //Console.WriteLine(sw.ElapsedMilliseconds);
 
-        Console.WriteLine("-----------------------Non-parallel foreach------------------------");
-        sw.Restart();
-        sumTask7 = 0;
-        foreach (var a in arrPar) sumTask7 += a * 31 / 13 + (int)Math.Sqrt(69);
-        Console.WriteLine(sw.ElapsedMilliseconds);
+        //Console.WriteLine("-----------------------Non-parallel foreach------------------------");
+        //sw.Restart();
+        //sumTask7 = 0;
+        //foreach (var a in arrPar) sumTask7 += a * 31 / 13 + (int)Math.Sqrt(69);
+        //Console.WriteLine(sw.ElapsedMilliseconds);
 
-        sw.Stop();
+        //sw.Stop();
 
         //Task7
         Console.WriteLine("--------------------\nTask 7\n--------------------");
