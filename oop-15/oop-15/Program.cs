@@ -24,7 +24,7 @@ class Program
     {
         //Task1
         Console.WriteLine("--------------------\nTask 1\n--------------------");
-        //CancellationTokenSource cancelTokenSource = new CancellationTokenSource();
+        CancellationTokenSource cancelTokenSource = new CancellationTokenSource();
         CancellationToken token = cancelTokenSource.Token;
         int multiplier = 5;
         Task task1 = new(() =>
@@ -88,19 +88,19 @@ class Program
         //Task2 lmao
         //Task4
         Console.WriteLine("--------------------\nTask 4\n--------------------");
-        var tasks4 = new Task<int>[3];
-        int Sum(int a, int b) => a + b;
-        for (int i = 0; i < tasks4.Length; i++)
-        {
-            Random random = new();
-            tasks4[i] = new(() => Sum(random.Next(1, 100), random.Next(1, 100)));
-            tasks4[i].Start();
-        }
-        Task.WaitAll(tasks4);
-        var task4 = new Task(() => { Console.WriteLine($"Sum of results of three tasks: {tasks4[0].Result 
-            * tasks4[1].Result - tasks4[2].Result}"); });
-        task4.Start();
-        task4.Wait();
+        //var tasks4 = new Task<int>[3];
+        //int Sum(int a, int b) => a + b;
+        //for (int i = 0; i < tasks4.Length; i++)
+        //{
+        //    Random random = new();
+        //    tasks4[i] = new(() => Sum(random.Next(1, 100), random.Next(1, 100)));
+        //    tasks4[i].Start();
+        //}
+        //Task.WaitAll(tasks4);
+        //var task4 = new Task(() => { Console.WriteLine($"Sum of results of three tasks: {tasks4[0].Result 
+        //    * tasks4[1].Result - tasks4[2].Result}"); });
+        //task4.Start();
+        //task4.Wait();
 
         //Task5
         //1
