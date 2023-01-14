@@ -1,4 +1,7 @@
 ﻿using System.IO.Compression;
+using static System.Net.Mime.MediaTypeNames;
+using System.Text;
+
 class UserException : Exception
 {
     public string _message;
@@ -218,7 +221,7 @@ class Program
             TOVFileManager.TaskB("new folder", ".txt");
             TOVFileManager.TaskC();
             Console.WriteLine("\nTask07");
-            TOVFileManager.Task07("day", false, 26);
+            TOVFileManager.Task07("day", false, 25);
         }
         catch (UserException e)
         {
@@ -227,3 +230,27 @@ class Program
     }
 }
 //Обработка ошибок есть, проверка того, начинается ли класс с ФИО, есть, но не используется, потому что зачем
+//question10:
+//using (FileStream fstream = new FileStream(@"C:\Users\sometext.dat",
+//FileMode.OpenOrCreate))
+//{ // преобразуем строку в байты
+//    byte[] input = Encoding.Default.GetBytes(text);
+//    fstream.Write(input, 0, input.Length);
+//    // перемещаем указатель
+//    fstream.Seek(0, SeekOrigin.Begin);
+//    // считываем 2 символf с текущей позиции
+//    byte[] output = new byte[2];
+//    fstream.Read(output, 0, output.Length);
+//    // декодируем байты в строку
+//    string textFromFile = Encoding.Default.GetString(output);
+//    // заменим
+//    string replaceText = "BSTU";
+//    fstream.Seek(-3, SeekOrigin.End);
+//    input = Encoding.Default.GetBytes(replaceText);
+//    fstream.Write(input, 0, input.Length);
+//    fstream.Seek(0, SeekOrigin.Begin);
+//    output = new byte[fstream.Length];
+//    fstream.Read(output, 0, output.Length);
+//    textFromFile = Encoding.Default.GetString(output);
+//    Console.WriteLine("Текст из файла: {0}", textFromFile);
+//}

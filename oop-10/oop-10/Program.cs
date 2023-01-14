@@ -12,7 +12,7 @@
         int N = int.Parse(Console.ReadLine());
         IEnumerable<string> lengthEqualsN = months.Where(n => n.Length == N).Select(n => n);
         IEnumerable<string> lengthMoreOrEquals4AndContainsU = months.Where(n => n.Length >= 4 
-            || n.IndexOf('u') != -1).Select(n => n);
+            && n.IndexOf('u') != -1).Select(n => n);
         IEnumerable<string> alphOrder = months.OrderBy(s => s);
         foreach (string month in sumWinMonths) Console.WriteLine(month);
         Console.WriteLine();
@@ -60,6 +60,21 @@
             }
         }
 
+        //Task04
+        string[] names = { "Анна", "Станислав", "Ольга", "Сева" };
+        int[] key = { 1, 4, 5, 7 };
+        var sometype = names
+        .Join(
+        key,
+        w => w.Length,
+        q => q,
+        (w, q) => new
+        {
+            id = w,
+            name = string.Format("{0} ", q),
+        });
+        foreach (var item in sometype)
+            Console.WriteLine(item);
 
         return;
     }

@@ -6,3 +6,46 @@
 26.11.2022 0:22:47, Copied files with extension .txt to new folder, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
 26.11.2022 0:22:47, Created zip-archive, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
 26.11.2022 0:22:47, Written lines based on day 26, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:57:12, Written directory info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:57:12, Written disk info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:57:12, Written file info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:57:12, Written disk D:\ info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:57:12, Created folder and file, copied, moved and deleted file, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:12, Written directory info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:12, Written disk info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:12, Written file info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:12, Written disk D:\ info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:12, Created folder and file, copied, moved and deleted file, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:40, Written directory info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:40, Written disk info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:40, Written file info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:40, Written disk D:\ info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:40, Created folder and file, copied, moved and deleted file, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:49, Written directory info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:49, Written disk info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:49, Written file info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:49, Written disk D:\ info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:58:49, Created folder and file, copied, moved and deleted file, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:09, Written directory info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:09, Written disk info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:09, Written file info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:09, Written disk D:\ info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:09, Created folder and file, copied, moved and deleted file, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:09, Copied files with extension .txt to new folder, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:09, Created zip-archive, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:20, Written directory info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:20, Written disk info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:20, Written file info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:20, Written disk D:\ info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:20, Created folder and file, copied, moved and deleted file, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:20, Copied files with extension .txt to new folder, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:20, Created zip-archive, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:20, Written lines based on day 26, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:49, Written directory info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:49, Written disk info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:49, Written file info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:49, Written disk D:\ info, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:49, Created folder and file, copied, moved and deleted file, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:49, Copied files with extension .txt to new folder, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:49, Created zip-archive, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt
+12.12.2022 19:59:49, Written lines based on day 25, D:\_УЧЁБА_\Лабораторные работы\OOP-3-term\oop-12\oop-12\bin\Debug\net6.0\TOVlogfile.txt

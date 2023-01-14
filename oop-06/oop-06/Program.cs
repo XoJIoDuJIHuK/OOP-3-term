@@ -11,7 +11,7 @@ struct myStruct
 {
     public int _size = 0;
     public string _name = "John";
-    myStruct(int size, string name)
+    public myStruct(int size, string name)
     {
         _size = size;
         _name = name;
@@ -65,10 +65,10 @@ class Program
                 var ship3 = new Steamvessel(5000, "St. Maria", 20, 400);
                 var ship4 = new Boat(46500, "Адмирал Кузнецов", 40, 1980);
 
-                var excGenerator1 = new Boat(46500, "Адмирал Кузнецов", -40, 1980);
+                //var excGenerator1 = new Boat(46500, "Адмирал Кузнецов", -40, 1980);
                 Corvette excGenerator2 = null;
-                container.Add(excGenerator2);
-                container.AverageDraught();
+                //container.Add(excGenerator2);
+                //container.AverageDraught();
                 Console.WriteLine(ship1._Name[999]);
                 container.Delete(excGenerator2);
 

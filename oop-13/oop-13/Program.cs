@@ -97,7 +97,8 @@ class Program
         //deser
         using (FileStream stream = new("ship.soap", FileMode.OpenOrCreate))
         {
-            Steamvessel someShip = (Steamvessel)soapFormatter.Deserialize(stream);
+            //Steamvessel someShip = (Steamvessel)soapFormatter.Deserialize(stream);
+            var someShip = (soapFormatter.Deserialize(stream) as Steamvessel)!;
             Write(someShip, "стало");
         }
         File.Delete("ship.soap");
@@ -121,7 +122,7 @@ class Program
         Console.WriteLine("\nJSON");
         using (FileStream fs = new("ship.json", FileMode.OpenOrCreate))
         {
-            JsonSerializer.Serialize<Steamvessel>(fs, Titanic);
+            JsonSerializer.Serialize(fs, Titanic);
             Write(Titanic, "было");
         }
 

@@ -2,14 +2,14 @@
 <ArrayOfSteamvessel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Steamvessel>
     <_Name>Adm. Kuznetsov</_Name>
-    <_Velocity>52</_Velocity>
+    <_Velocity>16</_Velocity>
   </Steamvessel>
   <Steamvessel>
     <_Name>Moskva</_Name>
-    <_Velocity>63</_Velocity>
+    <_Velocity>68</_Velocity>
   </Steamvessel>
   <Steamvessel>
     <_Name>Gnevny</_Name>
-    <_Velocity>45</_Velocity>
+    <_Velocity>66</_Velocity>
   </Steamvessel>
 </ArrayOfSteamvessel>
